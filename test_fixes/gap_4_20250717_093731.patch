@@ -1,0 +1,17 @@
+# Bug Fix: gap_4
+# File: src/components/BugReports.tsx
+# Lines: 78-79
+
+--- a/src/components/BugReports.tsx
++++ b/src/components/BugReports.tsx
+@@ -1 +1,9 @@
+-fetch('/api/bugs').then(res => res.json())
++fetch('/api/bugs')
++  .then(res => {
++    if (!res.ok) throw new Error('Failed to fetch bugs');
++    return res.json();
++  })
++  .catch(error => {
++    console.error('Bug fetch error:', error);
++    setError(error.message);
++  })

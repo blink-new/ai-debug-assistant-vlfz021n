@@ -1,0 +1,56 @@
+{
+  "timestamp": "2025-07-17T08:53:50.436335",
+  "video_analysis": {
+    "total_duration": 45.2,
+    "key_frames_detected": 12,
+    "ui_transitions": 8,
+    "issues_found": 2
+  },
+  "observed_journey": [
+    "Start: Welcome to Invoice App Login",
+    "Step 1: User entered credentials",
+    "Step 2: Navigated to dashboard",
+    "Step 3: Clicked 'New Invoice' button",
+    "Step 4: Filled invoice form",
+    "Step 5: Submitted invoice successfully",
+    "Step 6: Viewed confirmation message"
+  ],
+  "ui_transitions": [
+    {
+      "from_frame": 0,
+      "to_frame": 30,
+      "duration": 1.2,
+      "type": "navigation",
+      "description": "Login to dashboard transition"
+    },
+    {
+      "from_frame": 30,
+      "to_frame": 90,
+      "duration": 2.1,
+      "type": "form_open",
+      "description": "Opened invoice creation form"
+    },
+    {
+      "from_frame": 90,
+      "to_frame": 150,
+      "duration": 1.8,
+      "type": "form_submit_success",
+      "description": "Form submitted successfully"
+    }
+  ],
+  "spec_comparison": {
+    "expected_flows": 2,
+    "matched_flows": 2,
+    "missing_flows": 0,
+    "coverage": "100%"
+  },
+  "issues_detected": [
+    "Slow transition at 15.3s - 3.2s duration (exceeds 3.0s threshold)",
+    "Potential stuck screen at 32.1s - repeated frames detected"
+  ],
+  "recommendations": [
+    "Optimize page load performance for dashboard transition",
+    "Investigate stuck screen issue around 32s mark",
+    "Consider adding loading indicators for slow operations"
+  ]
+}

@@ -1,0 +1,9 @@
+# Bug Fix: quality_9
+# File: src/components/ProjectUpload.tsx
+# Lines: 89-90
+
+--- a/src/components/ProjectUpload.tsx
++++ b/src/components/ProjectUpload.tsx
+@@ -1 +1 @@
+-<button onClick={handleUpload}>Upload</button>
++// Fix Accessibility issue

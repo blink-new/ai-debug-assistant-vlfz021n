@@ -1,0 +1,9 @@
+# Bug Fix: quality_6
+# File: src/api/auth.ts
+# Lines: 23-24
+
+--- a/src/api/auth.ts
++++ b/src/api/auth.ts
+@@ -1 +1 @@
+-const API_URL = 'http://localhost:3000';
++// Add input validation and sanitization

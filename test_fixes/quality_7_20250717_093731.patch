@@ -1,0 +1,9 @@
+# Bug Fix: quality_7
+# File: src/components/AnalysisResults.tsx
+# Lines: 67-68
+
+--- a/src/components/AnalysisResults.tsx
++++ b/src/components/AnalysisResults.tsx
+@@ -1 +1 @@
+-const processedData = expensiveCalculation(rawData);
++// Optimize for better performance

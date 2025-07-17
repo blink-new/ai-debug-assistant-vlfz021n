@@ -1,0 +1,258 @@
+{
+  "timestamp": "20250717_093731",
+  "total_bugs": 17,
+  "total_fixes": 8,
+  "bugs_by_severity": {
+    "critical": 3,
+    "major": 11,
+    "minor": 3,
+    "info": 0
+  },
+  "bugs": [
+    {
+      "id": "quality_6",
+      "title": "Code Quality: Security",
+      "description": "Hardcoded API endpoint",
+      "severity": "critical",
+      "file_path": "src/api/auth.ts",
+      "line_number": 23,
+      "category": "Code Quality",
+      "confidence": 0.6,
+      "has_fix": true
+    },
+    {
+      "id": "log_error_11",
+      "title": "Runtime Error: API call failed...",
+      "description": "API call failed",
+      "severity": "critical",
+      "file_path": "runtime",
+      "line_number": null,
+      "category": "Runtime Error",
+      "confidence": 0.9,
+      "has_fix": true
+    },
+    {
+      "id": "ui_16",
+      "title": "UI Issue: Loading spinner stuck",
+      "description": "UI problem detected at 5.0s",
+      "severity": "critical",
+      "file_path": "ui_component",
+      "line_number": null,
+      "category": "User Interface",
+      "confidence": 0.8,
+      "has_fix": true
+    },
+    {
+      "id": "missing_0",
+      "title": "Missing Feature: User Authentication",
+      "description": "Complete login and registration system with JWT tokens",
+      "severity": "major",
+      "file_path": "src/components/Auth.tsx",
+      "line_number": null,
+      "category": "Missing Implementation",
+      "confidence": 0.8,
+      "has_fix": true
+    },
+    {
+      "id": "missing_1",
+      "title": "Missing Feature: Real-time Notifications",
+      "description": "WebSocket-based notification system",
+      "severity": "major",
+      "file_path": "src/services/notifications.ts",
+      "line_number": null,
+      "category": "Missing Implementation",
+      "confidence": 0.8,
+      "has_fix": true
+    },
+    {
+      "id": "missing_2",
+      "title": "Missing Feature: Data Export Functionality",
+      "description": "Export analysis results to PDF/CSV",
+      "severity": "major",
+      "file_path": "src/utils/export.ts",
+      "line_number": null,
+      "category": "Missing Implementation",
+      "confidence": 0.8,
+      "has_fix": true
+    },
+    {
+      "id": "gap_3",
+      "title": "Implementation Gap: Dashboard",
+      "description": "Missing data fetching logic",
+      "severity": "major",
+      "file_path": "src/components/Dashboard.tsx",
+      "line_number": 45,
+      "category": "Implementation Gap",
+      "confidence": 0.7,
+      "has_fix": true
+    },
+    {
+      "id": "gap_4",
+      "title": "Implementation Gap: BugReports",
+      "description": "Incomplete error handling",
+      "severity": "major",
+      "file_path": "src/components/BugReports.tsx",
+      "line_number": 78,
+      "category": "Implementation Gap",
+      "confidence": 0.7,
+      "has_fix": true
+    },
+    {
+      "id": "gap_5",
+      "title": "Implementation Gap: CodeDiffViewer",
+      "description": "Performance issue with large diffs",
+      "severity": "major",
+      "file_path": "src/components/CodeDiffViewer.tsx",
+      "line_number": 123,
+      "category": "Implementation Gap",
+      "confidence": 0.7,
+      "has_fix": true
+    },
+    {
+      "id": "quality_7",
+      "title": "Code Quality: Performance",
+      "description": "Unnecessary re-renders",
+      "severity": "major",
+      "file_path": "src/components/AnalysisResults.tsx",
+      "line_number": 67,
+      "category": "Code Quality",
+      "confidence": 0.6,
+      "has_fix": true
+    },
+    {
+      "id": "log_error_12",
+      "title": "Runtime Error: Deprecated function used...",
+      "description": "Deprecated function used",
+      "severity": "major",
+      "file_path": "runtime",
+      "line_number": null,
+      "category": "Runtime Error",
+      "confidence": 0.9,
+      "has_fix": true
+    },
+    {
+      "id": "perf_13",
+      "title": "Performance Issue: Slow getUserData",
+      "description": "Function getUserData is performing slowly",
+      "severity": "major",
+      "file_path": "performance",
+      "line_number": null,
+      "category": "Performance",
+      "confidence": 0.7,
+      "has_fix": true
+    },
+    {
+      "id": "perf_14",
+      "title": "Performance Issue: Slow loadDashboard",
+      "description": "Function loadDashboard is performing slowly",
+      "severity": "major",
+      "file_path": "performance",
+      "line_number": null,
+      "category": "Performance",
+      "confidence": 0.7,
+      "has_fix": true
+    },
+    {
+      "id": "ui_15",
+      "title": "UI Issue: Button not responding",
+      "description": "UI problem detected at 3.1s",
+      "severity": "major",
+      "file_path": "ui_component",
+      "line_number": null,
+      "category": "User Interface",
+      "confidence": 0.8,
+      "has_fix": true
+    },
+    {
+      "id": "quality_8",
+      "title": "Code Quality: Code Quality",
+      "description": "Unused import",
+      "severity": "minor",
+      "file_path": "src/utils/helpers.ts",
+      "line_number": 34,
+      "category": "Code Quality",
+      "confidence": 0.6,
+      "has_fix": true
+    },
+    {
+      "id": "quality_9",
+      "title": "Code Quality: Accessibility",
+      "description": "Missing accessibility attributes",
+      "severity": "minor",
+      "file_path": "src/components/ProjectUpload.tsx",
+      "line_number": 89,
+      "category": "Code Quality",
+      "confidence": 0.6,
+      "has_fix": true
+    },
+    {
+      "id": "quality_10",
+      "title": "Code Quality: Error Handling",
+      "description": "Unhandled promise rejection",
+      "severity": "minor",
+      "file_path": "src/services/api.ts",
+      "line_number": 156,
+      "category": "Code Quality",
+      "confidence": 0.6,
+      "has_fix": true
+    }
+  ],
+  "fixes": [
+    {
+      "bug_id": "quality_6",
+      "file_path": "src/api/auth.ts",
+      "start_line": 23,
+      "end_line": 24,
+      "lines_changed": 1
+    },
+    {
+      "bug_id": "gap_3",
+      "file_path": "src/components/Dashboard.tsx",
+      "start_line": 45,
+      "end_line": 47,
+      "lines_changed": 6
+    },
+    {
+      "bug_id": "gap_4",
+      "file_path": "src/components/BugReports.tsx",
+      "start_line": 78,
+      "end_line": 79,
+      "lines_changed": 9
+    },
+    {
+      "bug_id": "gap_5",
+      "file_path": "src/components/CodeDiffViewer.tsx",
+      "start_line": 123,
+      "end_line": 124,
+      "lines_changed": 14
+    },
+    {
+      "bug_id": "quality_7",
+      "file_path": "src/components/AnalysisResults.tsx",
+      "start_line": 67,
+      "end_line": 68,
+      "lines_changed": 1
+    },
+    {
+      "bug_id": "quality_8",
+      "file_path": "src/utils/helpers.ts",
+      "start_line": 34,
+      "end_line": 35,
+      "lines_changed": 1
+    },
+    {
+      "bug_id": "quality_9",
+      "file_path": "src/components/ProjectUpload.tsx",
+      "start_line": 89,
+      "end_line": 90,
+      "lines_changed": 1
+    },
+    {
+      "bug_id": "quality_10",
+      "file_path": "src/services/api.ts",
+      "start_line": 156,
+      "end_line": 157,
+      "lines_changed": 1
+    }
+  ]
+}

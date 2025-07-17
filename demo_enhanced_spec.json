@@ -1,0 +1,63 @@
+{
+  "app_name": "Invoice Management System",
+  "version": "1.0",
+  "user_flows": [
+    {
+      "name": "Create New Invoice",
+      "steps": [
+        "Navigate to dashboard",
+        "Click 'New Invoice' button",
+        "Fill invoice form",
+        "Submit invoice",
+        "View success confirmation"
+      ],
+      "keywords": [
+        "invoice",
+        "create",
+        "new",
+        "submit",
+        "form"
+      ]
+    },
+    {
+      "name": "User Login",
+      "steps": [
+        "Enter email address",
+        "Enter password",
+        "Click login button",
+        "Redirect to dashboard"
+      ],
+      "keywords": [
+        "login",
+        "email",
+        "password",
+        "dashboard"
+      ]
+    }
+  ],
+  "features": [
+    {
+      "name": "User Authentication",
+      "keywords": [
+        "login",
+        "logout",
+        "signup",
+        "password"
+      ]
+    },
+    {
+      "name": "Invoice Management",
+      "keywords": [
+        "invoice",
+        "create",
+        "edit",
+        "delete",
+        "view"
+      ]
+    }
+  ],
+  "performance_requirements": {
+    "max_page_load_time": 3.0,
+    "max_form_submission_time": 2.0
+  }
+}

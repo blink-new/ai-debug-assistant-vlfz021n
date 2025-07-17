@@ -1,0 +1,9 @@
+# Bug Fix: quality_8
+# File: src/utils/helpers.ts
+# Lines: 34-35
+
+--- a/src/utils/helpers.ts
++++ b/src/utils/helpers.ts
+@@ -1 +1 @@
+-import { debounce, throttle } from 'lodash';
++// Fix Code Quality issue

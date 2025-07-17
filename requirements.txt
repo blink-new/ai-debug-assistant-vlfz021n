@@ -1,0 +1,22 @@
+# AI Debug Assistant Dependencies
+
+# PromptRefiner Module Dependencies
+# Core Python libraries (built-in, no installation needed):
+# - json, logging, re, datetime, typing, dataclasses
+# No external dependencies required - uses only Python standard library
+
+# CodeAnalyzer Module Dependencies  
+openai>=1.0.0
+python-dotenv>=1.0.0
+opencv-python>=4.5.0
+pytesseract>=0.3.8
+numpy>=1.21.0
+
+# ScreenRecordingAnalyzer Module Dependencies
+opencv-python>=4.5.0
+pytesseract>=0.3.8
+numpy>=1.21.0
+
+# Optional dependencies for enhanced functionality:
+# pydantic>=2.0.0  # For advanced data validation (optional)
+# jsonschema>=4.0.0  # For JSON schema validation (optional)

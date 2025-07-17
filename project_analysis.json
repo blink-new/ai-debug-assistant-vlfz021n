@@ -1,0 +1,5967 @@
+{
+  "project_name": "",
+  "total_files": 67,
+  "total_lines": 8424,
+  "languages": {
+    "javascript": 1,
+    "typescript": 62,
+    "python": 4
+  },
+  "files": [
+    {
+      "file_path": "eslint.config.js",
+      "language": "javascript",
+      "functions": [
+        {
+          "name": "loadLucideIcons",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 12,
+          "is_async": false
+        },
+        {
+          "name": "suggestClosestIcon",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 29,
+          "is_async": false
+        },
+        {
+          "name": "distance",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 35,
+          "is_async": false
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "module": "@eslint/js",
+          "names": [
+            "js"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "globals",
+          "names": [
+            "globals"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "eslint-plugin-react-hooks",
+          "names": [
+            "reactHooks"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "eslint-plugin-react-refresh",
+          "names": [
+            "reactRefresh"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "typescript-eslint",
+          "names": [
+            "tseslint"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "module",
+          "names": [
+            "{ createRequire }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "lucide-react",
+          "names": [
+            "lucideReact"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [],
+      "lines_of_code": 134,
+      "complexity_score": 25
+    },
+    {
+      "file_path": "vite.config.ts",
+      "language": "typescript",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "module": "vite",
+          "names": [
+            "{ defineConfig }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@vitejs/plugin-react",
+          "names": [
+            "react"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "path",
+          "names": [
+            "path"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [],
+      "lines_of_code": 17,
+      "complexity_score": 1
+    },
+    {
+      "file_path": "prompt_refiner.py",
+      "language": "python",
+      "functions": [
+        {
+          "name": "main",
+          "args": [],
+          "decorators": [],
+          "docstring": "Example usage of the PromptRefiner module",
+          "line_number": 802,
+          "is_async": false
+        },
+        {
+          "name": "__init__",
+          "args": [
+            "self"
+          ],
+          "decorators": [],
+          "docstring": "Initialize the PromptRefiner with predefined patterns and templates",
+          "line_number": 48,
+          "is_async": false
+        },
+        {
+          "name": "analyze_prompt",
+          "args": [
+            "self",
+            "prompt"
+          ],
+          "decorators": [],
+          "docstring": "Analyze the original prompt to identify key components and potential ambiguities\n\nArgs:\n    prompt (str): The original app prompt to analyze\n    \nReturns:\n    Dict[str, Any]: Analysis results including detected patterns and ambiguities",
+          "line_number": 71,
+          "is_async": false
+        },
+        {
+          "name": "_detect_app_type",
+          "args": [
+            "self",
+            "prompt"
+          ],
+          "decorators": [],
+          "docstring": "Detect the primary app type based on keywords",
+          "line_number": 98,
+          "is_async": false
+        },
+        {
+          "name": "_detect_features",
+          "args": [
+            "self",
+            "prompt"
+          ],
+          "decorators": [],
+          "docstring": "Detect mentioned features in the prompt",
+          "line_number": 110,
+          "is_async": false
+        },
+        {
+          "name": "_extract_user_roles",
+          "args": [
+            "self",
+            "prompt"
+          ],
+          "decorators": [],
+          "docstring": "Extract mentioned user roles from the prompt",
+          "line_number": 121,
+          "is_async": false
+        },
+        {
+          "name": "_identify_ambiguities",
+          "args": [
+            "self",
+            "prompt"
+          ],
+          "decorators": [],
+          "docstring": "Identify potential ambiguities in the prompt",
+          "line_number": 142,
+          "is_async": false
+        },
+        {
+          "name": "_extract_technical_hints",
+          "args": [
+            "self",
+            "prompt"
+          ],
+          "decorators": [],
+          "docstring": "Extract technical requirements and hints from the prompt",
+          "line_number": 191,
+          "is_async": false
+        },
+        {
+          "name": "_extract_business_context",
+          "args": [
+            "self",
+            "prompt"
+          ],
+          "decorators": [],
+          "docstring": "Extract business context and constraints",
+          "line_number": 225,
+          "is_async": false
+        },
+        {
+          "name": "generate_enhanced_spec",
+          "args": [
+            "self",
+            "prompt"
+          ],
+          "decorators": [],
+          "docstring": "Generate a comprehensive enhanced specification from the original prompt\n\nArgs:\n    prompt (str): The original app prompt\n    \nReturns:\n    EnhancedSpec: Enhanced specification with resolved ambiguities",
+          "line_number": 254,
+          "is_async": false
+        },
+        {
+          "name": "_generate_app_name",
+          "args": [
+            "self",
+            "prompt",
+            "app_type"
+          ],
+          "decorators": [],
+          "docstring": "Generate a suitable app name based on prompt and type",
+          "line_number": 327,
+          "is_async": false
+        },
+        {
+          "name": "_define_user_roles",
+          "args": [
+            "self",
+            "detected_roles",
+            "app_type"
+          ],
+          "decorators": [],
+          "docstring": "Define comprehensive user roles with permissions",
+          "line_number": 356,
+          "is_async": false
+        },
+        {
+          "name": "_generate_features",
+          "args": [
+            "self",
+            "detected_features",
+            "app_type"
+          ],
+          "decorators": [],
+          "docstring": "Generate comprehensive features list",
+          "line_number": 391,
+          "is_async": false
+        },
+        {
+          "name": "_define_technical_requirements",
+          "args": [
+            "self",
+            "analysis"
+          ],
+          "decorators": [],
+          "docstring": "Define comprehensive technical requirements",
+          "line_number": 437,
+          "is_async": false
+        },
+        {
+          "name": "_define_business_constraints",
+          "args": [
+            "self",
+            "business_context"
+          ],
+          "decorators": [],
+          "docstring": "Define business constraints and requirements",
+          "line_number": 470,
+          "is_async": false
+        },
+        {
+          "name": "_generate_ui_requirements",
+          "args": [
+            "self",
+            "app_type"
+          ],
+          "decorators": [],
+          "docstring": "Generate UI/UX requirements",
+          "line_number": 495,
+          "is_async": false
+        },
+        {
+          "name": "_define_data_requirements",
+          "args": [
+            "self",
+            "app_type",
+            "features"
+          ],
+          "decorators": [],
+          "docstring": "Define data structure and requirements",
+          "line_number": 522,
+          "is_async": false
+        },
+        {
+          "name": "_generate_integration_requirements",
+          "args": [
+            "self",
+            "analysis"
+          ],
+          "decorators": [],
+          "docstring": "Generate integration requirements",
+          "line_number": 562,
+          "is_async": false
+        },
+        {
+          "name": "_define_security_requirements",
+          "args": [
+            "self",
+            "app_type"
+          ],
+          "decorators": [],
+          "docstring": "Define security requirements",
+          "line_number": 587,
+          "is_async": false
+        },
+        {
+          "name": "_define_performance_requirements",
+          "args": [
+            "self"
+          ],
+          "decorators": [],
+          "docstring": "Define performance requirements",
+          "line_number": 618,
+          "is_async": false
+        },
+        {
+          "name": "_define_deployment_requirements",
+          "args": [
+            "self",
+            "technical_hints"
+          ],
+          "decorators": [],
+          "docstring": "Define deployment requirements",
+          "line_number": 643,
+          "is_async": false
+        },
+        {
+          "name": "_define_target_audience",
+          "args": [
+            "self",
+            "app_type"
+          ],
+          "decorators": [],
+          "docstring": "Define target audience based on app type",
+          "line_number": 668,
+          "is_async": false
+        },
+        {
+          "name": "_define_core_purpose",
+          "args": [
+            "self",
+            "prompt",
+            "app_type"
+          ],
+          "decorators": [],
+          "docstring": "Extract or define the core purpose of the application",
+          "line_number": 682,
+          "is_async": false
+        },
+        {
+          "name": "_resolve_ambiguities",
+          "args": [
+            "self",
+            "ambiguities",
+            "analysis"
+          ],
+          "decorators": [],
+          "docstring": "Resolve identified ambiguities with specific recommendations",
+          "line_number": 710,
+          "is_async": false
+        },
+        {
+          "name": "_get_resolution_for_ambiguity",
+          "args": [
+            "self",
+            "ambiguity",
+            "analysis"
+          ],
+          "decorators": [],
+          "docstring": "Get specific resolution for an ambiguity",
+          "line_number": 724,
+          "is_async": false
+        },
+        {
+          "name": "_get_rationale_for_resolution",
+          "args": [
+            "self",
+            "ambiguity",
+            "analysis"
+          ],
+          "decorators": [],
+          "docstring": "Get rationale for the resolution",
+          "line_number": 740,
+          "is_async": false
+        },
+        {
+          "name": "save_enhanced_spec",
+          "args": [
+            "self",
+            "enhanced_spec",
+            "filename"
+          ],
+          "decorators": [],
+          "docstring": "Save the enhanced specification to a JSON file\n\nArgs:\n    enhanced_spec (EnhancedSpec): The enhanced specification to save\n    filename (str, optional): Custom filename for the output file\n    \nReturns:\n    str: Path to the saved file",
+          "line_number": 744,
+          "is_async": false
+        },
+        {
+          "name": "refine_prompt",
+          "args": [
+            "self",
+            "prompt",
+            "output_file"
+          ],
+          "decorators": [],
+          "docstring": "Main method to refine a prompt into an enhanced specification\n\nArgs:\n    prompt (str): The original app prompt to refine\n    output_file (str, optional): Custom output filename\n    \nReturns:\n    EnhancedSpec: The enhanced specification",
+          "line_number": 771,
+          "is_async": false
+        }
+      ],
+      "classes": [
+        {
+          "name": "EnhancedSpec",
+          "bases": [],
+          "methods": [],
+          "decorators": [
+            "dataclass"
+          ],
+          "docstring": "Data structure for enhanced app specification",
+          "line_number": 23
+        },
+        {
+          "name": "PromptRefiner",
+          "bases": [],
+          "methods": [
+            {
+              "name": "__init__",
+              "args": [
+                "self"
+              ],
+              "decorators": [],
+              "docstring": "Initialize the PromptRefiner with predefined patterns and templates",
+              "line_number": 48,
+              "is_async": false
+            },
+            {
+              "name": "analyze_prompt",
+              "args": [
+                "self",
+                "prompt"
+              ],
+              "decorators": [],
+              "docstring": "Analyze the original prompt to identify key components and potential ambiguities\n\nArgs:\n    prompt (str): The original app prompt to analyze\n    \nReturns:\n    Dict[str, Any]: Analysis results including detected patterns and ambiguities",
+              "line_number": 71,
+              "is_async": false
+            },
+            {
+              "name": "_detect_app_type",
+              "args": [
+                "self",
+                "prompt"
+              ],
+              "decorators": [],
+              "docstring": "Detect the primary app type based on keywords",
+              "line_number": 98,
+              "is_async": false
+            },
+            {
+              "name": "_detect_features",
+              "args": [
+                "self",
+                "prompt"
+              ],
+              "decorators": [],
+              "docstring": "Detect mentioned features in the prompt",
+              "line_number": 110,
+              "is_async": false
+            },
+            {
+              "name": "_extract_user_roles",
+              "args": [
+                "self",
+                "prompt"
+              ],
+              "decorators": [],
+              "docstring": "Extract mentioned user roles from the prompt",
+              "line_number": 121,
+              "is_async": false
+            },
+            {
+              "name": "_identify_ambiguities",
+              "args": [
+                "self",
+                "prompt"
+              ],
+              "decorators": [],
+              "docstring": "Identify potential ambiguities in the prompt",
+              "line_number": 142,
+              "is_async": false
+            },
+            {
+              "name": "_extract_technical_hints",
+              "args": [
+                "self",
+                "prompt"
+              ],
+              "decorators": [],
+              "docstring": "Extract technical requirements and hints from the prompt",
+              "line_number": 191,
+              "is_async": false
+            },
+            {
+              "name": "_extract_business_context",
+              "args": [
+                "self",
+                "prompt"
+              ],
+              "decorators": [],
+              "docstring": "Extract business context and constraints",
+              "line_number": 225,
+              "is_async": false
+            },
+            {
+              "name": "generate_enhanced_spec",
+              "args": [
+                "self",
+                "prompt"
+              ],
+              "decorators": [],
+              "docstring": "Generate a comprehensive enhanced specification from the original prompt\n\nArgs:\n    prompt (str): The original app prompt\n    \nReturns:\n    EnhancedSpec: Enhanced specification with resolved ambiguities",
+              "line_number": 254,
+              "is_async": false
+            },
+            {
+              "name": "_generate_app_name",
+              "args": [
+                "self",
+                "prompt",
+                "app_type"
+              ],
+              "decorators": [],
+              "docstring": "Generate a suitable app name based on prompt and type",
+              "line_number": 327,
+              "is_async": false
+            },
+            {
+              "name": "_define_user_roles",
+              "args": [
+                "self",
+                "detected_roles",
+                "app_type"
+              ],
+              "decorators": [],
+              "docstring": "Define comprehensive user roles with permissions",
+              "line_number": 356,
+              "is_async": false
+            },
+            {
+              "name": "_generate_features",
+              "args": [
+                "self",
+                "detected_features",
+                "app_type"
+              ],
+              "decorators": [],
+              "docstring": "Generate comprehensive features list",
+              "line_number": 391,
+              "is_async": false
+            },
+            {
+              "name": "_define_technical_requirements",
+              "args": [
+                "self",
+                "analysis"
+              ],
+              "decorators": [],
+              "docstring": "Define comprehensive technical requirements",
+              "line_number": 437,
+              "is_async": false
+            },
+            {
+              "name": "_define_business_constraints",
+              "args": [
+                "self",
+                "business_context"
+              ],
+              "decorators": [],
+              "docstring": "Define business constraints and requirements",
+              "line_number": 470,
+              "is_async": false
+            },
+            {
+              "name": "_generate_ui_requirements",
+              "args": [
+                "self",
+                "app_type"
+              ],
+              "decorators": [],
+              "docstring": "Generate UI/UX requirements",
+              "line_number": 495,
+              "is_async": false
+            },
+            {
+              "name": "_define_data_requirements",
+              "args": [
+                "self",
+                "app_type",
+                "features"
+              ],
+              "decorators": [],
+              "docstring": "Define data structure and requirements",
+              "line_number": 522,
+              "is_async": false
+            },
+            {
+              "name": "_generate_integration_requirements",
+              "args": [
+                "self",
+                "analysis"
+              ],
+              "decorators": [],
+              "docstring": "Generate integration requirements",
+              "line_number": 562,
+              "is_async": false
+            },
+            {
+              "name": "_define_security_requirements",
+              "args": [
+                "self",
+                "app_type"
+              ],
+              "decorators": [],
+              "docstring": "Define security requirements",
+              "line_number": 587,
+              "is_async": false
+            },
+            {
+              "name": "_define_performance_requirements",
+              "args": [
+                "self"
+              ],
+              "decorators": [],
+              "docstring": "Define performance requirements",
+              "line_number": 618,
+              "is_async": false
+            },
+            {
+              "name": "_define_deployment_requirements",
+              "args": [
+                "self",
+                "technical_hints"
+              ],
+              "decorators": [],
+              "docstring": "Define deployment requirements",
+              "line_number": 643,
+              "is_async": false
+            },
+            {
+              "name": "_define_target_audience",
+              "args": [
+                "self",
+                "app_type"
+              ],
+              "decorators": [],
+              "docstring": "Define target audience based on app type",
+              "line_number": 668,
+              "is_async": false
+            },
+            {
+              "name": "_define_core_purpose",
+              "args": [
+                "self",
+                "prompt",
+                "app_type"
+              ],
+              "decorators": [],
+              "docstring": "Extract or define the core purpose of the application",
+              "line_number": 682,
+              "is_async": false
+            },
+            {
+              "name": "_resolve_ambiguities",
+              "args": [
+                "self",
+                "ambiguities",
+                "analysis"
+              ],
+              "decorators": [],
+              "docstring": "Resolve identified ambiguities with specific recommendations",
+              "line_number": 710,
+              "is_async": false
+            },
+            {
+              "name": "_get_resolution_for_ambiguity",
+              "args": [
+                "self",
+                "ambiguity",
+                "analysis"
+              ],
+              "decorators": [],
+              "docstring": "Get specific resolution for an ambiguity",
+              "line_number": 724,
+              "is_async": false
+            },
+            {
+              "name": "_get_rationale_for_resolution",
+              "args": [
+                "self",
+                "ambiguity",
+                "analysis"
+              ],
+              "decorators": [],
+              "docstring": "Get rationale for the resolution",
+              "line_number": 740,
+              "is_async": false
+            },
+            {
+              "name": "save_enhanced_spec",
+              "args": [
+                "self",
+                "enhanced_spec",
+                "filename"
+              ],
+              "decorators": [],
+              "docstring": "Save the enhanced specification to a JSON file\n\nArgs:\n    enhanced_spec (EnhancedSpec): The enhanced specification to save\n    filename (str, optional): Custom filename for the output file\n    \nReturns:\n    str: Path to the saved file",
+              "line_number": 744,
+              "is_async": false
+            },
+            {
+              "name": "refine_prompt",
+              "args": [
+                "self",
+                "prompt",
+                "output_file"
+              ],
+              "decorators": [],
+              "docstring": "Main method to refine a prompt into an enhanced specification\n\nArgs:\n    prompt (str): The original app prompt to refine\n    output_file (str, optional): Custom output filename\n    \nReturns:\n    EnhancedSpec: The enhanced specification",
+              "line_number": 771,
+              "is_async": false
+            }
+          ],
+          "decorators": [],
+          "docstring": "Main class for analyzing and refining app prompts into comprehensive specifications",
+          "line_number": 43
+        }
+      ],
+      "imports": [
+        {
+          "module": "json",
+          "names": [
+            "json"
+          ],
+          "alias": null,
+          "is_from_import": false
+        },
+        {
+          "module": "logging",
+          "names": [
+            "logging"
+          ],
+          "alias": null,
+          "is_from_import": false
+        },
+        {
+          "module": "re",
+          "names": [
+            "re"
+          ],
+          "alias": null,
+          "is_from_import": false
+        },
+        {
+          "module": "datetime",
+          "names": [
+            "datetime"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "typing",
+          "names": [
+            "Dict",
+            "List",
+            "Optional",
+            "Any"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "dataclasses",
+          "names": [
+            "dataclass",
+            "asdict"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [
+        {
+          "name": "EnhancedSpec",
+          "type": "dataclass",
+          "fields": [
+            {
+              "name": "original_prompt",
+              "type": "str",
+              "default": null
+            },
+            {
+              "name": "app_name",
+              "type": "str",
+              "default": null
+            },
+            {
+              "name": "app_type",
+              "type": "str",
+              "default": null
+            },
+            {
+              "name": "target_audience",
+              "type": "str",
+              "default": null
+            },
+            {
+              "name": "core_purpose",
+              "type": "str",
+              "default": null
+            },
+            {
+              "name": "user_roles",
+              "type": "List[Dict[str, str]]",
+              "default": null
+            },
+            {
+              "name": "features",
+              "type": "List[Dict[str, Any]]",
+              "default": null
+            },
+            {
+              "name": "technical_requirements",
+              "type": "Dict[str, Any]",
+              "default": null
+            },
+            {
+              "name": "business_constraints",
+              "type": "Dict[str, Any]",
+              "default": null
+            },
+            {
+              "name": "ui_requirements",
+              "type": "Dict[str, Any]",
+              "default": null
+            },
+            {
+              "name": "data_requirements",
+              "type": "Dict[str, Any]",
+              "default": null
+            },
+            {
+              "name": "integration_requirements",
+              "type": "List[Dict[str, str]]",
+              "default": null
+            },
+            {
+              "name": "security_requirements",
+              "type": "List[str]",
+              "default": null
+            },
+            {
+              "name": "performance_requirements",
+              "type": "Dict[str, Any]",
+              "default": null
+            },
+            {
+              "name": "deployment_requirements",
+              "type": "Dict[str, Any]",
+              "default": null
+            },
+            {
+              "name": "ambiguities_resolved",
+              "type": "List[Dict[str, str]]",
+              "default": null
+            },
+            {
+              "name": "enhancement_timestamp",
+              "type": "str",
+              "default": null
+            }
+          ],
+          "line_number": 23
+        }
+      ],
+      "lines_of_code": 708,
+      "complexity_score": 45
+    },
+    {
+      "file_path": "test_prompt_refiner.py",
+      "language": "python",
+      "functions": [
+        {
+          "name": "test_ecommerce_prompt",
+          "args": [],
+          "decorators": [],
+          "docstring": "Test with an e-commerce app prompt",
+          "line_number": 10,
+          "is_async": false
+        },
+        {
+          "name": "test_social_app_prompt",
+          "args": [],
+          "decorators": [],
+          "docstring": "Test with a social app prompt",
+          "line_number": 33,
+          "is_async": false
+        },
+        {
+          "name": "test_productivity_app_prompt",
+          "args": [],
+          "decorators": [],
+          "docstring": "Test with a productivity app prompt",
+          "line_number": 54,
+          "is_async": false
+        },
+        {
+          "name": "test_vague_prompt",
+          "args": [],
+          "decorators": [],
+          "docstring": "Test with a very vague prompt to show ambiguity resolution",
+          "line_number": 76,
+          "is_async": false
+        },
+        {
+          "name": "compare_specs",
+          "args": [
+            "specs"
+          ],
+          "decorators": [],
+          "docstring": "Compare different generated specs",
+          "line_number": 103,
+          "is_async": false
+        },
+        {
+          "name": "main",
+          "args": [],
+          "decorators": [],
+          "docstring": "Run all tests",
+          "line_number": 114,
+          "is_async": false
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "module": "prompt_refiner",
+          "names": [
+            "PromptRefiner"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "json",
+          "names": [
+            "json"
+          ],
+          "alias": null,
+          "is_from_import": false
+        }
+      ],
+      "data_models": [],
+      "lines_of_code": 112,
+      "complexity_score": 5
+    },
+    {
+      "file_path": "code_analyzer.py",
+      "language": "python",
+      "functions": [
+        {
+          "name": "main",
+          "args": [],
+          "decorators": [],
+          "docstring": "Main function for command-line usage.",
+          "line_number": 621,
+          "is_async": false
+        },
+        {
+          "name": "__init__",
+          "args": [
+            "self",
+            "project_path"
+          ],
+          "decorators": [],
+          "docstring": "Initialize the CodeAnalyzer.\n\nArgs:\n    project_path: Path to the project directory to analyze",
+          "line_number": 118,
+          "is_async": false
+        },
+        {
+          "name": "analyze_project",
+          "args": [
+            "self"
+          ],
+          "decorators": [],
+          "docstring": "Analyze the entire project and generate a feature map.\n\nReturns:\n    FeatureMap: Complete analysis of the project",
+          "line_number": 128,
+          "is_async": false
+        },
+        {
+          "name": "_get_code_files",
+          "args": [
+            "self"
+          ],
+          "decorators": [],
+          "docstring": "Get all code files in the project directory.\n\nReturns:\n    List of Path objects for code files",
+          "line_number": 186,
+          "is_async": false
+        },
+        {
+          "name": "_analyze_file",
+          "args": [
+            "self",
+            "file_path"
+          ],
+          "decorators": [],
+          "docstring": "Analyze a single code file.\n\nArgs:\n    file_path: Path to the file to analyze\n    \nReturns:\n    FileAnalysis object or None if analysis failed",
+          "line_number": 206,
+          "is_async": false
+        },
+        {
+          "name": "_analyze_python_file",
+          "args": [
+            "self",
+            "file_path",
+            "content",
+            "lines_of_code"
+          ],
+          "decorators": [],
+          "docstring": "Analyze a Python file using AST.\n\nArgs:\n    file_path: Path to the Python file\n    content: File content\n    lines_of_code: Number of lines of code\n    \nReturns:\n    FileAnalysis object",
+          "line_number": 245,
+          "is_async": false
+        },
+        {
+          "name": "_analyze_js_ts_file",
+          "args": [
+            "self",
+            "file_path",
+            "content",
+            "lines_of_code",
+            "language"
+          ],
+          "decorators": [],
+          "docstring": "Analyze JavaScript/TypeScript files using regex patterns.\n\nArgs:\n    file_path: Path to the JS/TS file\n    content: File content\n    lines_of_code: Number of lines of code\n    language: 'javascript' or 'typescript'\n    \nReturns:\n    FileAnalysis object",
+          "line_number": 350,
+          "is_async": false
+        },
+        {
+          "name": "_get_decorator_name",
+          "args": [
+            "self",
+            "decorator"
+          ],
+          "decorators": [],
+          "docstring": "Extract decorator name from AST node.",
+          "line_number": 464,
+          "is_async": false
+        },
+        {
+          "name": "_get_base_name",
+          "args": [
+            "self",
+            "base"
+          ],
+          "decorators": [],
+          "docstring": "Extract base class name from AST node.",
+          "line_number": 477,
+          "is_async": false
+        },
+        {
+          "name": "_is_data_model",
+          "args": [
+            "self",
+            "node"
+          ],
+          "decorators": [],
+          "docstring": "Check if a class is a data model.",
+          "line_number": 485,
+          "is_async": false
+        },
+        {
+          "name": "_extract_data_model",
+          "args": [
+            "self",
+            "node"
+          ],
+          "decorators": [],
+          "docstring": "Extract data model information from a class.",
+          "line_number": 499,
+          "is_async": false
+        },
+        {
+          "name": "_calculate_python_complexity",
+          "args": [
+            "self",
+            "tree"
+          ],
+          "decorators": [],
+          "docstring": "Calculate cyclomatic complexity for Python code.",
+          "line_number": 528,
+          "is_async": false
+        },
+        {
+          "name": "_calculate_basic_complexity",
+          "args": [
+            "self",
+            "content"
+          ],
+          "decorators": [],
+          "docstring": "Calculate basic complexity based on control flow keywords.",
+          "line_number": 542,
+          "is_async": false
+        },
+        {
+          "name": "print_summary",
+          "args": [
+            "self"
+          ],
+          "decorators": [],
+          "docstring": "Print a summary of the analysis results.",
+          "line_number": 552,
+          "is_async": false
+        },
+        {
+          "name": "save_feature_map",
+          "args": [
+            "self",
+            "output_path"
+          ],
+          "decorators": [],
+          "docstring": "Save the feature map to a JSON file.\n\nArgs:\n    output_path: Path to save the JSON file",
+          "line_number": 592,
+          "is_async": false
+        }
+      ],
+      "classes": [
+        {
+          "name": "FunctionInfo",
+          "bases": [],
+          "methods": [],
+          "decorators": [
+            "dataclass"
+          ],
+          "docstring": "Information about a function definition.",
+          "line_number": 26
+        },
+        {
+          "name": "ClassInfo",
+          "bases": [],
+          "methods": [],
+          "decorators": [
+            "dataclass"
+          ],
+          "docstring": "Information about a class definition.",
+          "line_number": 37
+        },
+        {
+          "name": "ImportInfo",
+          "bases": [],
+          "methods": [],
+          "decorators": [
+            "dataclass"
+          ],
+          "docstring": "Information about imports in a file.",
+          "line_number": 48
+        },
+        {
+          "name": "DataModelInfo",
+          "bases": [],
+          "methods": [],
+          "decorators": [
+            "dataclass"
+          ],
+          "docstring": "Information about data models/schemas.",
+          "line_number": 57
+        },
+        {
+          "name": "FileAnalysis",
+          "bases": [],
+          "methods": [],
+          "decorators": [
+            "dataclass"
+          ],
+          "docstring": "Analysis results for a single file.",
+          "line_number": 66
+        },
+        {
+          "name": "FeatureMap",
+          "bases": [],
+          "methods": [],
+          "decorators": [
+            "dataclass"
+          ],
+          "docstring": "Complete feature map of the analyzed codebase.",
+          "line_number": 79
+        },
+        {
+          "name": "CodeAnalyzer",
+          "bases": [],
+          "methods": [
+            {
+              "name": "__init__",
+              "args": [
+                "self",
+                "project_path"
+              ],
+              "decorators": [],
+              "docstring": "Initialize the CodeAnalyzer.\n\nArgs:\n    project_path: Path to the project directory to analyze",
+              "line_number": 118,
+              "is_async": false
+            },
+            {
+              "name": "analyze_project",
+              "args": [
+                "self"
+              ],
+              "decorators": [],
+              "docstring": "Analyze the entire project and generate a feature map.\n\nReturns:\n    FeatureMap: Complete analysis of the project",
+              "line_number": 128,
+              "is_async": false
+            },
+            {
+              "name": "_get_code_files",
+              "args": [
+                "self"
+              ],
+              "decorators": [],
+              "docstring": "Get all code files in the project directory.\n\nReturns:\n    List of Path objects for code files",
+              "line_number": 186,
+              "is_async": false
+            },
+            {
+              "name": "_analyze_file",
+              "args": [
+                "self",
+                "file_path"
+              ],
+              "decorators": [],
+              "docstring": "Analyze a single code file.\n\nArgs:\n    file_path: Path to the file to analyze\n    \nReturns:\n    FileAnalysis object or None if analysis failed",
+              "line_number": 206,
+              "is_async": false
+            },
+            {
+              "name": "_analyze_python_file",
+              "args": [
+                "self",
+                "file_path",
+                "content",
+                "lines_of_code"
+              ],
+              "decorators": [],
+              "docstring": "Analyze a Python file using AST.\n\nArgs:\n    file_path: Path to the Python file\n    content: File content\n    lines_of_code: Number of lines of code\n    \nReturns:\n    FileAnalysis object",
+              "line_number": 245,
+              "is_async": false
+            },
+            {
+              "name": "_analyze_js_ts_file",
+              "args": [
+                "self",
+                "file_path",
+                "content",
+                "lines_of_code",
+                "language"
+              ],
+              "decorators": [],
+              "docstring": "Analyze JavaScript/TypeScript files using regex patterns.\n\nArgs:\n    file_path: Path to the JS/TS file\n    content: File content\n    lines_of_code: Number of lines of code\n    language: 'javascript' or 'typescript'\n    \nReturns:\n    FileAnalysis object",
+              "line_number": 350,
+              "is_async": false
+            },
+            {
+              "name": "_get_decorator_name",
+              "args": [
+                "self",
+                "decorator"
+              ],
+              "decorators": [],
+              "docstring": "Extract decorator name from AST node.",
+              "line_number": 464,
+              "is_async": false
+            },
+            {
+              "name": "_get_base_name",
+              "args": [
+                "self",
+                "base"
+              ],
+              "decorators": [],
+              "docstring": "Extract base class name from AST node.",
+              "line_number": 477,
+              "is_async": false
+            },
+            {
+              "name": "_is_data_model",
+              "args": [
+                "self",
+                "node"
+              ],
+              "decorators": [],
+              "docstring": "Check if a class is a data model.",
+              "line_number": 485,
+              "is_async": false
+            },
+            {
+              "name": "_extract_data_model",
+              "args": [
+                "self",
+                "node"
+              ],
+              "decorators": [],
+              "docstring": "Extract data model information from a class.",
+              "line_number": 499,
+              "is_async": false
+            },
+            {
+              "name": "_calculate_python_complexity",
+              "args": [
+                "self",
+                "tree"
+              ],
+              "decorators": [],
+              "docstring": "Calculate cyclomatic complexity for Python code.",
+              "line_number": 528,
+              "is_async": false
+            },
+            {
+              "name": "_calculate_basic_complexity",
+              "args": [
+                "self",
+                "content"
+              ],
+              "decorators": [],
+              "docstring": "Calculate basic complexity based on control flow keywords.",
+              "line_number": 542,
+              "is_async": false
+            },
+            {
+              "name": "print_summary",
+              "args": [
+                "self"
+              ],
+              "decorators": [],
+              "docstring": "Print a summary of the analysis results.",
+              "line_number": 552,
+              "is_async": false
+            },
+            {
+              "name": "save_feature_map",
+              "args": [
+                "self",
+                "output_path"
+              ],
+              "decorators": [],
+              "docstring": "Save the feature map to a JSON file.\n\nArgs:\n    output_path: Path to save the JSON file",
+              "line_number": 592,
+              "is_async": false
+            }
+          ],
+          "decorators": [],
+          "docstring": "Main code analyzer class that processes code directories and extracts features.",
+          "line_number": 92
+        }
+      ],
+      "imports": [
+        {
+          "module": "os",
+          "names": [
+            "os"
+          ],
+          "alias": null,
+          "is_from_import": false
+        },
+        {
+          "module": "ast",
+          "names": [
+            "ast"
+          ],
+          "alias": null,
+          "is_from_import": false
+        },
+        {
+          "module": "json",
+          "names": [
+            "json"
+          ],
+          "alias": null,
+          "is_from_import": false
+        },
+        {
+          "module": "re",
+          "names": [
+            "re"
+          ],
+          "alias": null,
+          "is_from_import": false
+        },
+        {
+          "module": "typing",
+          "names": [
+            "Dict",
+            "List",
+            "Any",
+            "Optional",
+            "Set"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "pathlib",
+          "names": [
+            "Path"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "dataclasses",
+          "names": [
+            "dataclass",
+            "asdict"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "argparse",
+          "names": [
+            "argparse"
+          ],
+          "alias": null,
+          "is_from_import": false
+        }
+      ],
+      "data_models": [
+        {
+          "name": "FunctionInfo",
+          "type": "dataclass",
+          "fields": [
+            {
+              "name": "name",
+              "type": "str",
+              "default": null
+            },
+            {
+              "name": "args",
+              "type": "List[str]",
+              "default": null
+            },
+            {
+              "name": "decorators",
+              "type": "List[str]",
+              "default": null
+            },
+            {
+              "name": "docstring",
+              "type": "Optional[str]",
+              "default": null
+            },
+            {
+              "name": "line_number",
+              "type": "int",
+              "default": null
+            },
+            {
+              "name": "is_async",
+              "type": "bool",
+              "default": "False"
+            }
+          ],
+          "line_number": 26
+        },
+        {
+          "name": "ClassInfo",
+          "type": "dataclass",
+          "fields": [
+            {
+              "name": "name",
+              "type": "str",
+              "default": null
+            },
+            {
+              "name": "bases",
+              "type": "List[str]",
+              "default": null
+            },
+            {
+              "name": "methods",
+              "type": "List[FunctionInfo]",
+              "default": null
+            },
+            {
+              "name": "decorators",
+              "type": "List[str]",
+              "default": null
+            },
+            {
+              "name": "docstring",
+              "type": "Optional[str]",
+              "default": null
+            },
+            {
+              "name": "line_number",
+              "type": "int",
+              "default": null
+            }
+          ],
+          "line_number": 37
+        },
+        {
+          "name": "ImportInfo",
+          "type": "dataclass",
+          "fields": [
+            {
+              "name": "module",
+              "type": "str",
+              "default": null
+            },
+            {
+              "name": "names",
+              "type": "List[str]",
+              "default": null
+            },
+            {
+              "name": "alias",
+              "type": "Optional[str]",
+              "default": "None"
+            },
+            {
+              "name": "is_from_import",
+              "type": "bool",
+              "default": "False"
+            }
+          ],
+          "line_number": 48
+        },
+        {
+          "name": "DataModelInfo",
+          "type": "dataclass",
+          "fields": [
+            {
+              "name": "name",
+              "type": "str",
+              "default": null
+            },
+            {
+              "name": "type",
+              "type": "str",
+              "default": null
+            },
+            {
+              "name": "fields",
+              "type": "List[Dict[str, Any]]",
+              "default": null
+            },
+            {
+              "name": "line_number",
+              "type": "int",
+              "default": null
+            }
+          ],
+          "line_number": 57
+        },
+        {
+          "name": "FileAnalysis",
+          "type": "dataclass",
+          "fields": [
+            {
+              "name": "file_path",
+              "type": "str",
+              "default": null
+            },
+            {
+              "name": "language",
+              "type": "str",
+              "default": null
+            },
+            {
+              "name": "functions",
+              "type": "List[FunctionInfo]",
+              "default": null
+            },
+            {
+              "name": "classes",
+              "type": "List[ClassInfo]",
+              "default": null
+            },
+            {
+              "name": "imports",
+              "type": "List[ImportInfo]",
+              "default": null
+            },
+            {
+              "name": "data_models",
+              "type": "List[DataModelInfo]",
+              "default": null
+            },
+            {
+              "name": "lines_of_code",
+              "type": "int",
+              "default": null
+            },
+            {
+              "name": "complexity_score",
+              "type": "int",
+              "default": null
+            }
+          ],
+          "line_number": 66
+        },
+        {
+          "name": "FeatureMap",
+          "type": "dataclass",
+          "fields": [
+            {
+              "name": "project_name",
+              "type": "str",
+              "default": null
+            },
+            {
+              "name": "total_files",
+              "type": "int",
+              "default": null
+            },
+            {
+              "name": "total_lines",
+              "type": "int",
+              "default": null
+            },
+            {
+              "name": "languages",
+              "type": "Dict[str, int]",
+              "default": null
+            },
+            {
+              "name": "files",
+              "type": "List[FileAnalysis]",
+              "default": null
+            },
+            {
+              "name": "global_imports",
+              "type": "Set[str]",
+              "default": null
+            },
+            {
+              "name": "global_functions",
+              "type": "Set[str]",
+              "default": null
+            },
+            {
+              "name": "global_classes",
+              "type": "Set[str]",
+              "default": null
+            },
+            {
+              "name": "data_models",
+              "type": "List[DataModelInfo]",
+              "default": null
+            }
+          ],
+          "line_number": 79
+        }
+      ],
+      "lines_of_code": 539,
+      "complexity_score": 63
+    },
+    {
+      "file_path": "test_code_analyzer.py",
+      "language": "python",
+      "functions": [
+        {
+          "name": "test_analyzer_on_current_project",
+          "args": [],
+          "decorators": [],
+          "docstring": "Test the analyzer on the current project directory.",
+          "line_number": 14,
+          "is_async": false
+        },
+        {
+          "name": "create_sample_project",
+          "args": [],
+          "decorators": [],
+          "docstring": "Create a sample project structure for testing.",
+          "line_number": 56,
+          "is_async": false
+        },
+        {
+          "name": "test_analyzer_on_sample",
+          "args": [],
+          "decorators": [],
+          "docstring": "Test the analyzer on the sample project.",
+          "line_number": 206,
+          "is_async": false
+        },
+        {
+          "name": "main",
+          "args": [],
+          "decorators": [],
+          "docstring": "Main test function.",
+          "line_number": 239,
+          "is_async": false
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "module": "os",
+          "names": [
+            "os"
+          ],
+          "alias": null,
+          "is_from_import": false
+        },
+        {
+          "module": "sys",
+          "names": [
+            "sys"
+          ],
+          "alias": null,
+          "is_from_import": false
+        },
+        {
+          "module": "code_analyzer",
+          "names": [
+            "CodeAnalyzer"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "shutil",
+          "names": [
+            "shutil"
+          ],
+          "alias": null,
+          "is_from_import": false
+        }
+      ],
+      "data_models": [],
+      "lines_of_code": 204,
+      "complexity_score": 8
+    },
+    {
+      "file_path": "src/App.tsx",
+      "language": "typescript",
+      "functions": [
+        {
+          "name": "App",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 6,
+          "is_async": false
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "module": "react",
+          "names": [
+            "{ useState, useEffect }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "./blink/client",
+          "names": [
+            "{ blink }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "./components/Dashboard",
+          "names": [
+            "{ Dashboard }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "./components/LoadingScreen",
+          "names": [
+            "{ LoadingScreen }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [],
+      "lines_of_code": 30,
+      "complexity_score": 6
+    },
+    {
+      "file_path": "src/main.tsx",
+      "language": "typescript",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "module": "react",
+          "names": [
+            "React"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "react-dom/client",
+          "names": [
+            "ReactDOM"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "react-hot-toast",
+          "names": [
+            "{ Toaster }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "./App",
+          "names": [
+            "App"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "./index.css",
+          "names": [],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [],
+      "lines_of_code": 11,
+      "complexity_score": 1
+    },
+    {
+      "file_path": "src/vite-env.d.ts",
+      "language": "typescript",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "data_models": [],
+      "lines_of_code": 1,
+      "complexity_score": 1
+    },
+    {
+      "file_path": "src/components/LoadingScreen.tsx",
+      "language": "typescript",
+      "functions": [
+        {
+          "name": "LoadingScreen",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 3,
+          "is_async": false
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "module": "lucide-react",
+          "names": [
+            "{ Loader2 }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [],
+      "lines_of_code": 11,
+      "complexity_score": 3
+    },
+    {
+      "file_path": "src/components/Dashboard.tsx",
+      "language": "typescript",
+      "functions": [
+        {
+          "name": "Dashboard",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 27,
+          "is_async": false
+        },
+        {
+          "name": "handleApplyFix",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 31,
+          "is_async": false
+        },
+        {
+          "name": "handleRejectFix",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 36,
+          "is_async": false
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "module": "react",
+          "names": [
+            "{ useState }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "./ui/card",
+          "names": [
+            "{ Card, CardContent, CardDescription, CardHeader, CardTitle }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "./ui/button",
+          "names": [
+            "{ Button }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "./ui/badge",
+          "names": [
+            "{ Badge }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "./ui/tabs",
+          "names": [
+            "{ Tabs, TabsContent, TabsList, TabsTrigger }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "./ProjectUpload",
+          "names": [
+            "{ ProjectUpload }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "./AnalysisResults",
+          "names": [
+            "{ AnalysisResults }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "./BugReports",
+          "names": [
+            "{ BugReports }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "./CodeDiffViewer",
+          "names": [
+            "{ CodeDiffViewer }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [
+        {
+          "name": "DashboardProps",
+          "type": "interface",
+          "fields": [],
+          "line_number": 23
+        }
+      ],
+      "lines_of_code": 159,
+      "complexity_score": 25
+    },
+    {
+      "file_path": "src/components/ProjectUpload.tsx",
+      "language": "typescript",
+      "functions": [
+        {
+          "name": "ProjectUpload",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 35,
+          "is_async": false
+        },
+        {
+          "name": "removeFile",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 88,
+          "is_async": false
+        },
+        {
+          "name": "validateForm",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 208,
+          "is_async": false
+        },
+        {
+          "name": "retryFetch",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 291,
+          "is_async": false
+        },
+        {
+          "name": "getFileIcon",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 330,
+          "is_async": false
+        },
+        {
+          "name": "getStatusIcon",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 340,
+          "is_async": false
+        },
+        {
+          "name": "onAnalysisComplete",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 23,
+          "is_async": false
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "module": "react",
+          "names": [
+            "{ useState, useCallback }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "./ui/card",
+          "names": [
+            "{ Card, CardContent, CardDescription, CardHeader, CardTitle }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "./ui/button",
+          "names": [
+            "{ Button }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "./ui/textarea",
+          "names": [
+            "{ Textarea }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "./ui/label",
+          "names": [
+            "{ Label }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "./ui/progress",
+          "names": [
+            "{ Progress }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "./ui/badge",
+          "names": [
+            "{ Badge }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "../blink/client",
+          "names": [
+            "{ blink }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [
+        {
+          "name": "ProjectUploadProps",
+          "type": "interface",
+          "fields": [],
+          "line_number": 22
+        },
+        {
+          "name": "UploadedFile",
+          "type": "interface",
+          "fields": [],
+          "line_number": 26
+        },
+        {
+          "name": "requirements",
+          "type": "interface",
+          "fields": [],
+          "line_number": 108
+        }
+      ],
+      "lines_of_code": 484,
+      "complexity_score": 75
+    },
+    {
+      "file_path": "src/components/AnalysisResults.tsx",
+      "language": "typescript",
+      "functions": [
+        {
+          "name": "AnalysisResults",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 24,
+          "is_async": false
+        },
+        {
+          "name": "getSeverityColor",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 48,
+          "is_async": false
+        },
+        {
+          "name": "getSeverityIcon",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 57,
+          "is_async": false
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "module": "react",
+          "names": [
+            "{ useState }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "./ui/card",
+          "names": [
+            "{ Card, CardContent, CardDescription, CardHeader, CardTitle }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "./ui/button",
+          "names": [
+            "{ Button }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "./ui/badge",
+          "names": [
+            "{ Badge }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "./ui/tabs",
+          "names": [
+            "{ Tabs, TabsContent, TabsList, TabsTrigger }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "./ui/scroll-area",
+          "names": [
+            "{ ScrollArea }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "./ui/separator",
+          "names": [
+            "{ Separator }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [
+        {
+          "name": "AnalysisResultsProps",
+          "type": "interface",
+          "fields": [],
+          "line_number": 20
+        }
+      ],
+      "lines_of_code": 363,
+      "complexity_score": 39
+    },
+    {
+      "file_path": "src/components/BugReports.tsx",
+      "language": "typescript",
+      "functions": [
+        {
+          "name": "BugReports",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 39,
+          "is_async": false
+        },
+        {
+          "name": "getSeverityColor",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 159,
+          "is_async": false
+        },
+        {
+          "name": "getStatusColor",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 168,
+          "is_async": false
+        },
+        {
+          "name": "getSeverityIcon",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 177,
+          "is_async": false
+        },
+        {
+          "name": "getStatusIcon",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 186,
+          "is_async": false
+        },
+        {
+          "name": "exportReports",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 195,
+          "is_async": false
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "module": "react",
+          "names": [
+            "{ useState, useEffect, useCallback }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "./ui/card",
+          "names": [
+            "{ Card, CardContent, CardDescription, CardHeader, CardTitle }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "./ui/button",
+          "names": [
+            "{ Button }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "./ui/badge",
+          "names": [
+            "{ Badge }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "./ui/input",
+          "names": [
+            "{ Input }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "./ui/select",
+          "names": [
+            "{ Select, SelectContent, SelectItem, SelectTrigger, SelectValue }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "./ui/scroll-area",
+          "names": [
+            "{ ScrollArea }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "./ui/separator",
+          "names": [
+            "{ Separator }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "../blink/client",
+          "names": [
+            "{ blink }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [
+        {
+          "name": "BugReport",
+          "type": "interface",
+          "fields": [],
+          "line_number": 26
+        }
+      ],
+      "lines_of_code": 454,
+      "complexity_score": 59
+    },
+    {
+      "file_path": "src/components/CodeDiffViewer.tsx",
+      "language": "typescript",
+      "functions": [
+        {
+          "name": "CodeDiffViewer",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 44,
+          "is_async": false
+        },
+        {
+          "name": "validateForm",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 70,
+          "is_async": false
+        },
+        {
+          "name": "retryFetch",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 153,
+          "is_async": false
+        },
+        {
+          "name": "getStatusColor",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 196,
+          "is_async": false
+        },
+        {
+          "name": "getStatusIcon",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 205,
+          "is_async": false
+        },
+        {
+          "name": "getImpactColor",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 214,
+          "is_async": false
+        },
+        {
+          "name": "copyToClipboard",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 223,
+          "is_async": false
+        },
+        {
+          "name": "downloadFix",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 227,
+          "is_async": false
+        },
+        {
+          "name": "renderDiffLines",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 250,
+          "is_async": false
+        },
+        {
+          "name": "onApplyFix",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 40,
+          "is_async": false
+        },
+        {
+          "name": "onRejectFix",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 41,
+          "is_async": false
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "module": "react",
+          "names": [
+            "{ useState }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "./ui/card",
+          "names": [
+            "{ Card, CardContent, CardDescription, CardHeader, CardTitle }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "./ui/button",
+          "names": [
+            "{ Button }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "./ui/badge",
+          "names": [
+            "{ Badge }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "./ui/tabs",
+          "names": [
+            "{ Tabs, TabsContent, TabsList, TabsTrigger }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "./ui/scroll-area",
+          "names": [
+            "{ ScrollArea }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "./ui/separator",
+          "names": [
+            "{ Separator }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [
+        {
+          "name": "CodeFix",
+          "type": "interface",
+          "fields": [],
+          "line_number": 24
+        },
+        {
+          "name": "CodeDiffViewerProps",
+          "type": "interface",
+          "fields": [],
+          "line_number": 38
+        }
+      ],
+      "lines_of_code": 529,
+      "complexity_score": 66
+    },
+    {
+      "file_path": "src/components/ui/accordion.tsx",
+      "language": "typescript",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "module": "react",
+          "names": [
+            "* as React"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@radix-ui/react-accordion",
+          "names": [
+            "* as AccordionPrimitive"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "lucide-react",
+          "names": [
+            "{ ChevronDown }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/lib/utils",
+          "names": [
+            "{ cn }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [],
+      "lines_of_code": 49,
+      "complexity_score": 7
+    },
+    {
+      "file_path": "src/components/ui/alert-dialog.tsx",
+      "language": "typescript",
+      "functions": [
+        {
+          "name": "AlertDialogHeader",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 46,
+          "is_async": false
+        },
+        {
+          "name": "AlertDialogFooter",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 60,
+          "is_async": false
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "module": "react",
+          "names": [
+            "* as React"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@radix-ui/react-alert-dialog",
+          "names": [
+            "* as AlertDialogPrimitive"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/lib/utils",
+          "names": [
+            "{ cn }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/components/ui/button",
+          "names": [
+            "{ buttonVariants }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [],
+      "lines_of_code": 126,
+      "complexity_score": 9
+    },
+    {
+      "file_path": "src/components/ui/alert.tsx",
+      "language": "typescript",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "module": "react",
+          "names": [
+            "* as React"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "class-variance-authority",
+          "names": [
+            "{ cva, type VariantProps }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/lib/utils",
+          "names": [
+            "{ cn }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [],
+      "lines_of_code": 53,
+      "complexity_score": 6
+    },
+    {
+      "file_path": "src/components/ui/aspect-ratio.tsx",
+      "language": "typescript",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "module": "@radix-ui/react-aspect-ratio",
+          "names": [
+            "* as AspectRatioPrimitive"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [],
+      "lines_of_code": 3,
+      "complexity_score": 1
+    },
+    {
+      "file_path": "src/components/ui/avatar.tsx",
+      "language": "typescript",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "module": "react",
+          "names": [
+            "* as React"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@radix-ui/react-avatar",
+          "names": [
+            "* as AvatarPrimitive"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/lib/utils",
+          "names": [
+            "{ cn }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [],
+      "lines_of_code": 44,
+      "complexity_score": 5
+    },
+    {
+      "file_path": "src/components/ui/badge.tsx",
+      "language": "typescript",
+      "functions": [
+        {
+          "name": "Badge",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 30,
+          "is_async": false
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "module": "react",
+          "names": [
+            "* as React"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "class-variance-authority",
+          "names": [
+            "{ cva, type VariantProps }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/lib/utils",
+          "names": [
+            "{ cn }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [
+        {
+          "name": "BadgeProps",
+          "type": "interface",
+          "fields": [],
+          "line_number": 26
+        }
+      ],
+      "lines_of_code": 31,
+      "complexity_score": 5
+    },
+    {
+      "file_path": "src/components/ui/breadcrumb.tsx",
+      "language": "typescript",
+      "functions": [
+        {
+          "name": "BreadcrumbSeparator",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 75,
+          "is_async": false
+        },
+        {
+          "name": "BreadcrumbEllipsis",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 91,
+          "is_async": false
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "module": "react",
+          "names": [
+            "* as React"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@radix-ui/react-slot",
+          "names": [
+            "{ Slot }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "lucide-react",
+          "names": [
+            "{ ChevronRight, MoreHorizontal }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/lib/utils",
+          "names": [
+            "{ cn }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [],
+      "lines_of_code": 105,
+      "complexity_score": 10
+    },
+    {
+      "file_path": "src/components/ui/button.tsx",
+      "language": "typescript",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "module": "react",
+          "names": [
+            "* as React"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@radix-ui/react-slot",
+          "names": [
+            "{ Slot }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "class-variance-authority",
+          "names": [
+            "{ cva, type VariantProps }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/lib/utils",
+          "names": [
+            "{ cn }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [
+        {
+          "name": "ButtonProps",
+          "type": "interface",
+          "fields": [],
+          "line_number": 37
+        }
+      ],
+      "lines_of_code": 52,
+      "complexity_score": 8
+    },
+    {
+      "file_path": "src/components/ui/calendar.tsx",
+      "language": "typescript",
+      "functions": [
+        {
+          "name": "Calendar",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 12,
+          "is_async": false
+        },
+        {
+          "name": "CalendarDayButton",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 173,
+          "is_async": false
+        },
+        {
+          "name": "formatMonthDropdown",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 37,
+          "is_async": false
+        },
+        {
+          "name": "Root",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 126,
+          "is_async": false
+        },
+        {
+          "name": "Chevron",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 136,
+          "is_async": false
+        },
+        {
+          "name": "WeekNumber",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 157,
+          "is_async": false
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "module": "react",
+          "names": [
+            "* as React"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "react-day-picker",
+          "names": [
+            "{ DayButton, DayPicker, getDefaultClassNames }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/lib/utils",
+          "names": [
+            "{ cn }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/components/ui/button",
+          "names": [
+            "{ Button, buttonVariants }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [],
+      "lines_of_code": 202,
+      "complexity_score": 33
+    },
+    {
+      "file_path": "src/components/ui/card.tsx",
+      "language": "typescript",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "module": "react",
+          "names": [
+            "* as React"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/lib/utils",
+          "names": [
+            "{ cn }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [],
+      "lines_of_code": 68,
+      "complexity_score": 9
+    },
+    {
+      "file_path": "src/components/ui/carousel.tsx",
+      "language": "typescript",
+      "functions": [
+        {
+          "name": "useCarousel",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 33,
+          "is_async": false
+        },
+        {
+          "name": "scrollPrev",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 25,
+          "is_async": false
+        },
+        {
+          "name": "scrollNext",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 26,
+          "is_async": false
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "module": "react",
+          "names": [
+            "* as React"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "lucide-react",
+          "names": [
+            "{ ArrowLeft, ArrowRight }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/lib/utils",
+          "names": [
+            "{ cn }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/components/ui/button",
+          "names": [
+            "{ Button }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [
+        {
+          "name": "CarouselApi",
+          "type": "type",
+          "fields": [],
+          "line_number": 10
+        },
+        {
+          "name": "UseCarouselParameters",
+          "type": "type",
+          "fields": [],
+          "line_number": 11
+        },
+        {
+          "name": "CarouselOptions",
+          "type": "type",
+          "fields": [],
+          "line_number": 12
+        },
+        {
+          "name": "CarouselPlugin",
+          "type": "type",
+          "fields": [],
+          "line_number": 13
+        },
+        {
+          "name": "CarouselProps",
+          "type": "type",
+          "fields": [],
+          "line_number": 15
+        },
+        {
+          "name": "CarouselContextProps",
+          "type": "type",
+          "fields": [],
+          "line_number": 22
+        }
+      ],
+      "lines_of_code": 231,
+      "complexity_score": 13
+    },
+    {
+      "file_path": "src/components/ui/chart.tsx",
+      "language": "typescript",
+      "functions": [
+        {
+          "name": "useChart",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 27,
+          "is_async": false
+        },
+        {
+          "name": "getPayloadConfigFromPayload",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 320,
+          "is_async": false
+        },
+        {
+          "name": "ChartStyle",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 70,
+          "is_async": false
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "module": "react",
+          "names": [
+            "* as React"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "recharts",
+          "names": [
+            "* as RechartsPrimitive"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/lib/utils",
+          "names": [
+            "{ cn }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [
+        {
+          "name": "ChartConfig",
+          "type": "type",
+          "fields": [],
+          "line_number": 11
+        },
+        {
+          "name": "ChartContextProps",
+          "type": "type",
+          "fields": [],
+          "line_number": 21
+        }
+      ],
+      "lines_of_code": 329,
+      "complexity_score": 26
+    },
+    {
+      "file_path": "src/components/ui/checkbox.tsx",
+      "language": "typescript",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "module": "react",
+          "names": [
+            "* as React"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@radix-ui/react-checkbox",
+          "names": [
+            "* as CheckboxPrimitive"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "lucide-react",
+          "names": [
+            "{ Check }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/lib/utils",
+          "names": [
+            "{ cn }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [],
+      "lines_of_code": 25,
+      "complexity_score": 4
+    },
+    {
+      "file_path": "src/components/ui/collapsible.tsx",
+      "language": "typescript",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "module": "@radix-ui/react-collapsible",
+          "names": [
+            "* as CollapsiblePrimitive"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [],
+      "lines_of_code": 6,
+      "complexity_score": 1
+    },
+    {
+      "file_path": "src/components/ui/command.tsx",
+      "language": "typescript",
+      "functions": [
+        {
+          "name": "CommandDialog",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 24,
+          "is_async": false
+        },
+        {
+          "name": "CommandShortcut",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 125,
+          "is_async": false
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "module": "react",
+          "names": [
+            "* as React"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@radix-ui/react-dialog",
+          "names": [
+            "{ type DialogProps }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "cmdk",
+          "names": [
+            "{ Command as CommandPrimitive }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "lucide-react",
+          "names": [
+            "{ Search }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/lib/utils",
+          "names": [
+            "{ cn }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/components/ui/dialog",
+          "names": [
+            "{ Dialog, DialogContent }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [],
+      "lines_of_code": 135,
+      "complexity_score": 15
+    },
+    {
+      "file_path": "src/components/ui/context-menu.tsx",
+      "language": "typescript",
+      "functions": [
+        {
+          "name": "ContextMenuShortcut",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 166,
+          "is_async": false
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "module": "react",
+          "names": [
+            "* as React"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@radix-ui/react-context-menu",
+          "names": [
+            "* as ContextMenuPrimitive"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "lucide-react",
+          "names": [
+            "{ Check, ChevronRight, Circle }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/lib/utils",
+          "names": [
+            "{ cn }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [],
+      "lines_of_code": 181,
+      "complexity_score": 22
+    },
+    {
+      "file_path": "src/components/ui/dialog.tsx",
+      "language": "typescript",
+      "functions": [
+        {
+          "name": "DialogHeader",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 56,
+          "is_async": false
+        },
+        {
+          "name": "DialogFooter",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 70,
+          "is_async": false
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "module": "react",
+          "names": [
+            "* as React"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@radix-ui/react-dialog",
+          "names": [
+            "* as DialogPrimitive"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "lucide-react",
+          "names": [
+            "{ X }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/lib/utils",
+          "names": [
+            "{ cn }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [],
+      "lines_of_code": 109,
+      "complexity_score": 8
+    },
+    {
+      "file_path": "src/components/ui/drawer.tsx",
+      "language": "typescript",
+      "functions": [
+        {
+          "name": "Drawer",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 8,
+          "is_async": false
+        },
+        {
+          "name": "DrawerHeader",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 58,
+          "is_async": false
+        },
+        {
+          "name": "DrawerFooter",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 69,
+          "is_async": false
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "module": "react",
+          "names": [
+            "* as React"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "vaul",
+          "names": [
+            "{ Drawer as DrawerPrimitive }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/lib/utils",
+          "names": [
+            "{ cn }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [],
+      "lines_of_code": 105,
+      "complexity_score": 6
+    },
+    {
+      "file_path": "src/components/ui/dropdown-menu.tsx",
+      "language": "typescript",
+      "functions": [
+        {
+          "name": "DropdownMenuShortcut",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 170,
+          "is_async": false
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "module": "react",
+          "names": [
+            "* as React"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@radix-ui/react-dropdown-menu",
+          "names": [
+            "* as DropdownMenuPrimitive"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "lucide-react",
+          "names": [
+            "{ Check, ChevronRight, Circle }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/lib/utils",
+          "names": [
+            "{ cn }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [],
+      "lines_of_code": 182,
+      "complexity_score": 18
+    },
+    {
+      "file_path": "src/components/ui/form.tsx",
+      "language": "typescript",
+      "functions": [
+        {
+          "name": "useFormField",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 44,
+          "is_async": false
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "module": "react",
+          "names": [
+            "* as React"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@radix-ui/react-label",
+          "names": [
+            "* as LabelPrimitive"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@radix-ui/react-slot",
+          "names": [
+            "{ Slot }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/lib/utils",
+          "names": [
+            "{ cn }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/components/ui/label",
+          "names": [
+            "{ Label }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [
+        {
+          "name": "FormItemContextValue",
+          "type": "type",
+          "fields": [],
+          "line_number": 67
+        }
+      ],
+      "lines_of_code": 153,
+      "complexity_score": 31
+    },
+    {
+      "file_path": "src/components/ui/hover-card.tsx",
+      "language": "typescript",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "module": "react",
+          "names": [
+            "* as React"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@radix-ui/react-hover-card",
+          "names": [
+            "* as HoverCardPrimitive"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/lib/utils",
+          "names": [
+            "{ cn }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [],
+      "lines_of_code": 23,
+      "complexity_score": 4
+    },
+    {
+      "file_path": "src/components/ui/input-otp.tsx",
+      "language": "typescript",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "module": "react",
+          "names": [
+            "* as React"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "input-otp",
+          "names": [
+            "{ OTPInput, OTPInputContext }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "lucide-react",
+          "names": [
+            "{ Minus }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/lib/utils",
+          "names": [
+            "{ cn }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [],
+      "lines_of_code": 62,
+      "complexity_score": 8
+    },
+    {
+      "file_path": "src/components/ui/input.tsx",
+      "language": "typescript",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "module": "react",
+          "names": [
+            "* as React"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/lib/utils",
+          "names": [
+            "{ cn }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [],
+      "lines_of_code": 19,
+      "complexity_score": 4
+    },
+    {
+      "file_path": "src/components/ui/label.tsx",
+      "language": "typescript",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "module": "react",
+          "names": [
+            "* as React"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@radix-ui/react-label",
+          "names": [
+            "* as LabelPrimitive"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "class-variance-authority",
+          "names": [
+            "{ cva, type VariantProps }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/lib/utils",
+          "names": [
+            "{ cn }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [],
+      "lines_of_code": 20,
+      "complexity_score": 2
+    },
+    {
+      "file_path": "src/components/ui/menubar.tsx",
+      "language": "typescript",
+      "functions": [
+        {
+          "name": "MenubarMenu",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 9,
+          "is_async": false
+        },
+        {
+          "name": "MenubarGroup",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 15,
+          "is_async": false
+        },
+        {
+          "name": "MenubarPortal",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 21,
+          "is_async": false
+        },
+        {
+          "name": "MenubarRadioGroup",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 27,
+          "is_async": false
+        },
+        {
+          "name": "MenubarSub",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 33,
+          "is_async": false
+        },
+        {
+          "name": "MenubarShortcut",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 223,
+          "is_async": false
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "module": "react",
+          "names": [
+            "* as React"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@radix-ui/react-menubar",
+          "names": [
+            "* as MenubarPrimitive"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "lucide-react",
+          "names": [
+            "{ Check, ChevronRight, Circle }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/lib/utils",
+          "names": [
+            "{ cn }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [],
+      "lines_of_code": 237,
+      "complexity_score": 25
+    },
+    {
+      "file_path": "src/components/ui/navigation-menu.tsx",
+      "language": "typescript",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "module": "react",
+          "names": [
+            "* as React"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@radix-ui/react-navigation-menu",
+          "names": [
+            "* as NavigationMenuPrimitive"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "class-variance-authority",
+          "names": [
+            "{ cva }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "lucide-react",
+          "names": [
+            "{ ChevronDown }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/lib/utils",
+          "names": [
+            "{ cn }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [],
+      "lines_of_code": 117,
+      "complexity_score": 16
+    },
+    {
+      "file_path": "src/components/ui/pagination.tsx",
+      "language": "typescript",
+      "functions": [
+        {
+          "name": "Pagination",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 7,
+          "is_async": false
+        },
+        {
+          "name": "PaginationLink",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 42,
+          "is_async": false
+        },
+        {
+          "name": "PaginationPrevious",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 62,
+          "is_async": false
+        },
+        {
+          "name": "PaginationNext",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 78,
+          "is_async": false
+        },
+        {
+          "name": "PaginationEllipsis",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 94,
+          "is_async": false
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "module": "react",
+          "names": [
+            "* as React"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "lucide-react",
+          "names": [
+            "{ ChevronLeft, ChevronRight, MoreHorizontal }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/lib/utils",
+          "names": [
+            "{ cn }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/components/ui/button",
+          "names": [
+            "{ ButtonProps, buttonVariants }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [
+        {
+          "name": "PaginationLinkProps",
+          "type": "type",
+          "fields": [],
+          "line_number": 37
+        }
+      ],
+      "lines_of_code": 107,
+      "complexity_score": 5
+    },
+    {
+      "file_path": "src/components/ui/popover.tsx",
+      "language": "typescript",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "module": "react",
+          "names": [
+            "* as React"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@radix-ui/react-popover",
+          "names": [
+            "* as PopoverPrimitive"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/lib/utils",
+          "names": [
+            "{ cn }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [],
+      "lines_of_code": 25,
+      "complexity_score": 4
+    },
+    {
+      "file_path": "src/components/ui/progress.tsx",
+      "language": "typescript",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "module": "react",
+          "names": [
+            "* as React"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@radix-ui/react-progress",
+          "names": [
+            "* as ProgressPrimitive"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/lib/utils",
+          "names": [
+            "{ cn }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [],
+      "lines_of_code": 24,
+      "complexity_score": 3
+    },
+    {
+      "file_path": "src/components/ui/radio-group.tsx",
+      "language": "typescript",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "module": "react",
+          "names": [
+            "* as React"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@radix-ui/react-radio-group",
+          "names": [
+            "* as RadioGroupPrimitive"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "lucide-react",
+          "names": [
+            "{ Circle }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/lib/utils",
+          "names": [
+            "{ cn }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [],
+      "lines_of_code": 38,
+      "complexity_score": 4
+    },
+    {
+      "file_path": "src/components/ui/resizable.tsx",
+      "language": "typescript",
+      "functions": [
+        {
+          "name": "ResizablePanelGroup",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 8,
+          "is_async": false
+        },
+        {
+          "name": "ResizableHandle",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 23,
+          "is_async": false
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "module": "lucide-react",
+          "names": [
+            "{ GripVertical }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "react-resizable-panels",
+          "names": [
+            "* as ResizablePrimitive"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/lib/utils",
+          "names": [
+            "{ cn }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [],
+      "lines_of_code": 39,
+      "complexity_score": 3
+    },
+    {
+      "file_path": "src/components/ui/scroll-area.tsx",
+      "language": "typescript",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "module": "react",
+          "names": [
+            "* as React"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@radix-ui/react-scroll-area",
+          "names": [
+            "* as ScrollAreaPrimitive"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/lib/utils",
+          "names": [
+            "{ cn }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [],
+      "lines_of_code": 42,
+      "complexity_score": 3
+    },
+    {
+      "file_path": "src/components/ui/select.tsx",
+      "language": "typescript",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "module": "react",
+          "names": [
+            "* as React"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@radix-ui/react-select",
+          "names": [
+            "* as SelectPrimitive"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "lucide-react",
+          "names": [
+            "{ Check, ChevronDown, ChevronUp }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/lib/utils",
+          "names": [
+            "{ cn }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [],
+      "lines_of_code": 146,
+      "complexity_score": 16
+    },
+    {
+      "file_path": "src/components/ui/separator.tsx",
+      "language": "typescript",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "module": "react",
+          "names": [
+            "* as React"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@radix-ui/react-separator",
+          "names": [
+            "* as SeparatorPrimitive"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/lib/utils",
+          "names": [
+            "{ cn }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [],
+      "lines_of_code": 26,
+      "complexity_score": 2
+    },
+    {
+      "file_path": "src/components/ui/sheet.tsx",
+      "language": "typescript",
+      "functions": [
+        {
+          "name": "SheetHeader",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 77,
+          "is_async": false
+        },
+        {
+          "name": "SheetFooter",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 91,
+          "is_async": false
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "module": "react",
+          "names": [
+            "* as React"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@radix-ui/react-dialog",
+          "names": [
+            "* as SheetPrimitive"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "class-variance-authority",
+          "names": [
+            "{ cva, type VariantProps }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "lucide-react",
+          "names": [
+            "{ X }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/lib/utils",
+          "names": [
+            "{ cn }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [
+        {
+          "name": "SheetContentProps",
+          "type": "interface",
+          "fields": [],
+          "line_number": 52
+        }
+      ],
+      "lines_of_code": 125,
+      "complexity_score": 8
+    },
+    {
+      "file_path": "src/components/ui/sidebar.tsx",
+      "language": "typescript",
+      "functions": [
+        {
+          "name": "useSidebar",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 45,
+          "is_async": false
+        },
+        {
+          "name": "handleKeyDown",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 105,
+          "is_async": false
+        },
+        {
+          "name": "setOpen",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 36,
+          "is_async": false
+        },
+        {
+          "name": "setOpenMobile",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 38,
+          "is_async": false
+        },
+        {
+          "name": "toggleSidebar",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 40,
+          "is_async": false
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "module": "react",
+          "names": [
+            "* as React"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@radix-ui/react-slot",
+          "names": [
+            "{ Slot }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "class-variance-authority",
+          "names": [
+            "{ VariantProps, cva }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "lucide-react",
+          "names": [
+            "{ PanelLeft }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/hooks/use-mobile",
+          "names": [
+            "{ useIsMobile }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/lib/utils",
+          "names": [
+            "{ cn }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/components/ui/button",
+          "names": [
+            "{ Button }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/components/ui/input",
+          "names": [
+            "{ Input }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/components/ui/separator",
+          "names": [
+            "{ Separator }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/components/ui/skeleton",
+          "names": [
+            "{ Skeleton }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [
+        {
+          "name": "SidebarContextProps",
+          "type": "type",
+          "fields": [],
+          "line_number": 33
+        }
+      ],
+      "lines_of_code": 718,
+      "complexity_score": 63
+    },
+    {
+      "file_path": "src/components/ui/skeleton.tsx",
+      "language": "typescript",
+      "functions": [
+        {
+          "name": "Skeleton",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 3,
+          "is_async": false
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "module": "@/lib/utils",
+          "names": [
+            "{ cn }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [],
+      "lines_of_code": 13,
+      "complexity_score": 1
+    },
+    {
+      "file_path": "src/components/ui/slider.tsx",
+      "language": "typescript",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "module": "react",
+          "names": [
+            "* as React"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@radix-ui/react-slider",
+          "names": [
+            "* as SliderPrimitive"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/lib/utils",
+          "names": [
+            "{ cn }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [],
+      "lines_of_code": 23,
+      "complexity_score": 2
+    },
+    {
+      "file_path": "src/components/ui/sonner.tsx",
+      "language": "typescript",
+      "functions": [
+        {
+          "name": "Toaster",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 8,
+          "is_async": false
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "module": "next-themes",
+          "names": [
+            "{ useTheme }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "sonner",
+          "names": [
+            "{ Toaster as Sonner }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [
+        {
+          "name": "ToasterProps",
+          "type": "type",
+          "fields": [],
+          "line_number": 6
+        }
+      ],
+      "lines_of_code": 26,
+      "complexity_score": 5
+    },
+    {
+      "file_path": "src/components/ui/switch.tsx",
+      "language": "typescript",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "module": "react",
+          "names": [
+            "* as React"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@radix-ui/react-switch",
+          "names": [
+            "* as SwitchPrimitives"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/lib/utils",
+          "names": [
+            "{ cn }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [],
+      "lines_of_code": 24,
+      "complexity_score": 4
+    },
+    {
+      "file_path": "src/components/ui/table.tsx",
+      "language": "typescript",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "module": "react",
+          "names": [
+            "* as React"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/lib/utils",
+          "names": [
+            "{ cn }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [],
+      "lines_of_code": 110,
+      "complexity_score": 11
+    },
+    {
+      "file_path": "src/components/ui/tabs.tsx",
+      "language": "typescript",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "module": "react",
+          "names": [
+            "* as React"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@radix-ui/react-tabs",
+          "names": [
+            "* as TabsPrimitive"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/lib/utils",
+          "names": [
+            "{ cn }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [],
+      "lines_of_code": 47,
+      "complexity_score": 8
+    },
+    {
+      "file_path": "src/components/ui/textarea.tsx",
+      "language": "typescript",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "module": "react",
+          "names": [
+            "* as React"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/lib/utils",
+          "names": [
+            "{ cn }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [],
+      "lines_of_code": 19,
+      "complexity_score": 3
+    },
+    {
+      "file_path": "src/components/ui/toast.tsx",
+      "language": "typescript",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "module": "react",
+          "names": [
+            "* as React"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@radix-ui/react-toast",
+          "names": [
+            "* as ToastPrimitives"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "class-variance-authority",
+          "names": [
+            "{ cva, type VariantProps }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "lucide-react",
+          "names": [
+            "{ X }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/lib/utils",
+          "names": [
+            "{ cn }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [
+        {
+          "name": "ToastProps",
+          "type": "type",
+          "fields": [],
+          "line_number": 113
+        },
+        {
+          "name": "ToastActionElement",
+          "type": "type",
+          "fields": [],
+          "line_number": 115
+        }
+      ],
+      "lines_of_code": 115,
+      "complexity_score": 14
+    },
+    {
+      "file_path": "src/components/ui/toaster.tsx",
+      "language": "typescript",
+      "functions": [
+        {
+          "name": "Toaster",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 11,
+          "is_async": false
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "module": "@/hooks/use-toast",
+          "names": [
+            "{ useToast }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [],
+      "lines_of_code": 31,
+      "complexity_score": 1
+    },
+    {
+      "file_path": "src/components/ui/toggle-group.tsx",
+      "language": "typescript",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "module": "react",
+          "names": [
+            "* as React"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@radix-ui/react-toggle-group",
+          "names": [
+            "* as ToggleGroupPrimitive"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "class-variance-authority",
+          "names": [
+            "{ type VariantProps }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/lib/utils",
+          "names": [
+            "{ cn }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/components/ui/toggle",
+          "names": [
+            "{ toggleVariants }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [],
+      "lines_of_code": 51,
+      "complexity_score": 4
+    },
+    {
+      "file_path": "src/components/ui/toggle.tsx",
+      "language": "typescript",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "module": "react",
+          "names": [
+            "* as React"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@radix-ui/react-toggle",
+          "names": [
+            "* as TogglePrimitive"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "class-variance-authority",
+          "names": [
+            "{ cva, type VariantProps }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/lib/utils",
+          "names": [
+            "{ cn }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [],
+      "lines_of_code": 39,
+      "complexity_score": 6
+    },
+    {
+      "file_path": "src/components/ui/tooltip.tsx",
+      "language": "typescript",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "module": "react",
+          "names": [
+            "* as React"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@radix-ui/react-tooltip",
+          "names": [
+            "* as TooltipPrimitive"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "@/lib/utils",
+          "names": [
+            "{ cn }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [],
+      "lines_of_code": 25,
+      "complexity_score": 4
+    },
+    {
+      "file_path": "src/hooks/use-mobile.tsx",
+      "language": "typescript",
+      "functions": [
+        {
+          "name": "useIsMobile",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 5,
+          "is_async": false
+        },
+        {
+          "name": "onChange",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 10,
+          "is_async": false
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "module": "react",
+          "names": [
+            "* as React"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [],
+      "lines_of_code": 15,
+      "complexity_score": 1
+    },
+    {
+      "file_path": "src/hooks/use-toast.ts",
+      "language": "typescript",
+      "functions": [
+        {
+          "name": "genId",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 30,
+          "is_async": false
+        },
+        {
+          "name": "dispatch",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 136,
+          "is_async": false
+        },
+        {
+          "name": "toast",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 145,
+          "is_async": false
+        },
+        {
+          "name": "useToast",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 174,
+          "is_async": false
+        },
+        {
+          "name": "addToRemoveQueue",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 61,
+          "is_async": false
+        },
+        {
+          "name": "update",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 148,
+          "is_async": false
+        },
+        {
+          "name": "dismiss",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 153,
+          "is_async": false
+        },
+        {
+          "name": "onOpenChange",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 161,
+          "is_async": false
+        },
+        {
+          "name": "dismiss",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 190,
+          "is_async": false
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "module": "react",
+          "names": [
+            "* as React"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [
+        {
+          "name": "State",
+          "type": "interface",
+          "fields": [],
+          "line_number": 55
+        },
+        {
+          "name": "ToasterToast",
+          "type": "type",
+          "fields": [],
+          "line_number": 14
+        },
+        {
+          "name": "ActionType",
+          "type": "type",
+          "fields": [],
+          "line_number": 35
+        },
+        {
+          "name": "Action",
+          "type": "type",
+          "fields": [],
+          "line_number": 37
+        },
+        {
+          "name": "Toast",
+          "type": "type",
+          "fields": [],
+          "line_number": 143
+        }
+      ],
+      "lines_of_code": 163,
+      "complexity_score": 15
+    },
+    {
+      "file_path": "src/lib/utils.ts",
+      "language": "typescript",
+      "functions": [
+        {
+          "name": "cn",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 4,
+          "is_async": false
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "module": "clsx",
+          "names": [
+            "{ type ClassValue, clsx }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "tailwind-merge",
+          "names": [
+            "{ twMerge }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [],
+      "lines_of_code": 5,
+      "complexity_score": 1
+    },
+    {
+      "file_path": "src/blink/client.ts",
+      "language": "typescript",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "module": "@blinkdotnew/sdk",
+          "names": [
+            "{ createClient }"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [],
+      "lines_of_code": 5,
+      "complexity_score": 1
+    }
+  ],
+  "global_imports": [
+    "@vitejs/plugin-react",
+    "@/components/ui/button",
+    "./ui/progress",
+    "./ui/card",
+    "module",
+    "@radix-ui/react-checkbox",
+    "cmdk",
+    "logging",
+    "@radix-ui/react-dropdown-menu",
+    "recharts",
+    "@blinkdotnew/sdk",
+    "@radix-ui/react-aspect-ratio",
+    "datetime",
+    "@radix-ui/react-accordion",
+    "./components/Dashboard",
+    "@radix-ui/react-menubar",
+    "@radix-ui/react-slider",
+    "typing",
+    "@radix-ui/react-label",
+    "@radix-ui/react-tabs",
+    "re",
+    "@/components/ui/dialog",
+    "./ui/select",
+    "@radix-ui/react-toggle",
+    "@radix-ui/react-navigation-menu",
+    "@radix-ui/react-toast",
+    "./ProjectUpload",
+    "@radix-ui/react-scroll-area",
+    "lucide-react",
+    "clsx",
+    "@/components/ui/label",
+    "tailwind-merge",
+    "react",
+    "./index.css",
+    "./blink/client",
+    "@/hooks/use-mobile",
+    "os",
+    "sys",
+    "dataclasses",
+    "./CodeDiffViewer",
+    "@radix-ui/react-hover-card",
+    "@radix-ui/react-radio-group",
+    "./AnalysisResults",
+    "@/lib/utils",
+    "vaul",
+    "argparse",
+    "./ui/badge",
+    "input-otp",
+    "@radix-ui/react-separator",
+    "@/hooks/use-toast",
+    "path",
+    "./ui/textarea",
+    "./ui/scroll-area",
+    "shutil",
+    "./ui/input",
+    "@radix-ui/react-slot",
+    "prompt_refiner",
+    "./ui/tabs",
+    "ast",
+    "@radix-ui/react-avatar",
+    "./components/LoadingScreen",
+    "react-resizable-panels",
+    "@radix-ui/react-alert-dialog",
+    "./BugReports",
+    "globals",
+    "react-day-picker",
+    "../blink/client",
+    "@radix-ui/react-tooltip",
+    "vite",
+    "eslint-plugin-react-refresh",
+    "@/components/ui/skeleton",
+    "sonner",
+    "./ui/label",
+    "./App",
+    "typescript-eslint",
+    "@radix-ui/react-popover",
+    "code_analyzer",
+    "pathlib",
+    "@radix-ui/react-collapsible",
+    "@/components/ui/separator",
+    "@radix-ui/react-dialog",
+    "@radix-ui/react-switch",
+    "class-variance-authority",
+    "@radix-ui/react-context-menu",
+    "./ui/separator",
+    "@/components/ui/toggle",
+    "@radix-ui/react-progress",
+    "eslint-plugin-react-hooks",
+    "@eslint/js",
+    "./ui/button",
+    "json",
+    "@radix-ui/react-toggle-group",
+    "@/components/ui/input",
+    "react-dom/client",
+    "react-hot-toast",
+    "next-themes",
+    "@radix-ui/react-select"
+  ],
+  "global_functions": [
+    "_define_performance_requirements",
+    "getSeverityIcon",
+    "handleApplyFix",
+    "BugReports",
+    "_generate_app_name",
+    "_detect_app_type",
+    "_identify_ambiguities",
+    "retryFetch",
+    "BreadcrumbEllipsis",
+    "save_feature_map",
+    "analyze_prompt",
+    "compare_specs",
+    "_define_security_requirements",
+    "analyze_project",
+    "downloadFix",
+    "formatMonthDropdown",
+    "_is_data_model",
+    "getFileIcon",
+    "_resolve_ambiguities",
+    "_calculate_python_complexity",
+    "handleKeyDown",
+    "DialogFooter",
+    "Badge",
+    "setOpenMobile",
+    "_define_target_audience",
+    "distance",
+    "_define_business_constraints",
+    "getPayloadConfigFromPayload",
+    "Calendar",
+    "MenubarShortcut",
+    "cn",
+    "_get_resolution_for_ambiguity",
+    "Dashboard",
+    "LoadingScreen",
+    "main",
+    "_define_core_purpose",
+    "addToRemoveQueue",
+    "AlertDialogHeader",
+    "_extract_technical_hints",
+    "_calculate_basic_complexity",
+    "useToast",
+    "test_vague_prompt",
+    "ChartStyle",
+    "DrawerHeader",
+    "CommandDialog",
+    "refine_prompt",
+    "_generate_ui_requirements",
+    "getStatusColor",
+    "_get_code_files",
+    "_analyze_file",
+    "getImpactColor",
+    "Pagination",
+    "genId",
+    "validateForm",
+    "renderDiffLines",
+    "PaginationEllipsis",
+    "dispatch",
+    "__init__",
+    "MenubarGroup",
+    "DropdownMenuShortcut",
+    "update",
+    "AnalysisResults",
+    "PaginationPrevious",
+    "CommandShortcut",
+    "_define_user_roles",
+    "generate_enhanced_spec",
+    "suggestClosestIcon",
+    "MenubarPortal",
+    "PaginationNext",
+    "onAnalysisComplete",
+    "CodeDiffViewer",
+    "_define_data_requirements",
+    "App",
+    "_get_decorator_name",
+    "scrollNext",
+    "Toaster",
+    "_define_technical_requirements",
+    "ResizableHandle",
+    "ResizablePanelGroup",
+    "test_social_app_prompt",
+    "print_summary",
+    "Drawer",
+    "ContextMenuShortcut",
+    "_analyze_js_ts_file",
+    "CalendarDayButton",
+    "test_ecommerce_prompt",
+    "create_sample_project",
+    "handleRejectFix",
+    "BreadcrumbSeparator",
+    "DrawerFooter",
+    "_detect_features",
+    "_define_deployment_requirements",
+    "SheetHeader",
+    "SheetFooter",
+    "Skeleton",
+    "onApplyFix",
+    "useFormField",
+    "toggleSidebar",
+    "_get_base_name",
+    "ProjectUpload",
+    "removeFile",
+    "useSidebar",
+    "useCarousel",
+    "_generate_features",
+    "Root",
+    "WeekNumber",
+    "test_analyzer_on_current_project",
+    "toast",
+    "MenubarSub",
+    "_get_rationale_for_resolution",
+    "exportReports",
+    "_analyze_python_file",
+    "_extract_data_model",
+    "getStatusIcon",
+    "onOpenChange",
+    "_generate_integration_requirements",
+    "onRejectFix",
+    "setOpen",
+    "test_analyzer_on_sample",
+    "save_enhanced_spec",
+    "copyToClipboard",
+    "MenubarMenu",
+    "Chevron",
+    "onChange",
+    "_extract_user_roles",
+    "_extract_business_context",
+    "AlertDialogFooter",
+    "test_productivity_app_prompt",
+    "dismiss",
+    "MenubarRadioGroup",
+    "DialogHeader",
+    "PaginationLink",
+    "scrollPrev",
+    "useChart",
+    "useIsMobile",
+    "getSeverityColor",
+    "loadLucideIcons"
+  ],
+  "global_classes": [
+    "FileAnalysis",
+    "EnhancedSpec",
+    "PromptRefiner",
+    "FeatureMap",
+    "CodeAnalyzer",
+    "ClassInfo",
+    "FunctionInfo",
+    "DataModelInfo",
+    "ImportInfo"
+  ],
+  "data_models": [
+    {
+      "name": "EnhancedSpec",
+      "type": "dataclass",
+      "fields": [
+        {
+          "name": "original_prompt",
+          "type": "str",
+          "default": null
+        },
+        {
+          "name": "app_name",
+          "type": "str",
+          "default": null
+        },
+        {
+          "name": "app_type",
+          "type": "str",
+          "default": null
+        },
+        {
+          "name": "target_audience",
+          "type": "str",
+          "default": null
+        },
+        {
+          "name": "core_purpose",
+          "type": "str",
+          "default": null
+        },
+        {
+          "name": "user_roles",
+          "type": "List[Dict[str, str]]",
+          "default": null
+        },
+        {
+          "name": "features",
+          "type": "List[Dict[str, Any]]",
+          "default": null
+        },
+        {
+          "name": "technical_requirements",
+          "type": "Dict[str, Any]",
+          "default": null
+        },
+        {
+          "name": "business_constraints",
+          "type": "Dict[str, Any]",
+          "default": null
+        },
+        {
+          "name": "ui_requirements",
+          "type": "Dict[str, Any]",
+          "default": null
+        },
+        {
+          "name": "data_requirements",
+          "type": "Dict[str, Any]",
+          "default": null
+        },
+        {
+          "name": "integration_requirements",
+          "type": "List[Dict[str, str]]",
+          "default": null
+        },
+        {
+          "name": "security_requirements",
+          "type": "List[str]",
+          "default": null
+        },
+        {
+          "name": "performance_requirements",
+          "type": "Dict[str, Any]",
+          "default": null
+        },
+        {
+          "name": "deployment_requirements",
+          "type": "Dict[str, Any]",
+          "default": null
+        },
+        {
+          "name": "ambiguities_resolved",
+          "type": "List[Dict[str, str]]",
+          "default": null
+        },
+        {
+          "name": "enhancement_timestamp",
+          "type": "str",
+          "default": null
+        }
+      ],
+      "line_number": 23
+    },
+    {
+      "name": "FunctionInfo",
+      "type": "dataclass",
+      "fields": [
+        {
+          "name": "name",
+          "type": "str",
+          "default": null
+        },
+        {
+          "name": "args",
+          "type": "List[str]",
+          "default": null
+        },
+        {
+          "name": "decorators",
+          "type": "List[str]",
+          "default": null
+        },
+        {
+          "name": "docstring",
+          "type": "Optional[str]",
+          "default": null
+        },
+        {
+          "name": "line_number",
+          "type": "int",
+          "default": null
+        },
+        {
+          "name": "is_async",
+          "type": "bool",
+          "default": "False"
+        }
+      ],
+      "line_number": 26
+    },
+    {
+      "name": "ClassInfo",
+      "type": "dataclass",
+      "fields": [
+        {
+          "name": "name",
+          "type": "str",
+          "default": null
+        },
+        {
+          "name": "bases",
+          "type": "List[str]",
+          "default": null
+        },
+        {
+          "name": "methods",
+          "type": "List[FunctionInfo]",
+          "default": null
+        },
+        {
+          "name": "decorators",
+          "type": "List[str]",
+          "default": null
+        },
+        {
+          "name": "docstring",
+          "type": "Optional[str]",
+          "default": null
+        },
+        {
+          "name": "line_number",
+          "type": "int",
+          "default": null
+        }
+      ],
+      "line_number": 37
+    },
+    {
+      "name": "ImportInfo",
+      "type": "dataclass",
+      "fields": [
+        {
+          "name": "module",
+          "type": "str",
+          "default": null
+        },
+        {
+          "name": "names",
+          "type": "List[str]",
+          "default": null
+        },
+        {
+          "name": "alias",
+          "type": "Optional[str]",
+          "default": "None"
+        },
+        {
+          "name": "is_from_import",
+          "type": "bool",
+          "default": "False"
+        }
+      ],
+      "line_number": 48
+    },
+    {
+      "name": "DataModelInfo",
+      "type": "dataclass",
+      "fields": [
+        {
+          "name": "name",
+          "type": "str",
+          "default": null
+        },
+        {
+          "name": "type",
+          "type": "str",
+          "default": null
+        },
+        {
+          "name": "fields",
+          "type": "List[Dict[str, Any]]",
+          "default": null
+        },
+        {
+          "name": "line_number",
+          "type": "int",
+          "default": null
+        }
+      ],
+      "line_number": 57
+    },
+    {
+      "name": "FileAnalysis",
+      "type": "dataclass",
+      "fields": [
+        {
+          "name": "file_path",
+          "type": "str",
+          "default": null
+        },
+        {
+          "name": "language",
+          "type": "str",
+          "default": null
+        },
+        {
+          "name": "functions",
+          "type": "List[FunctionInfo]",
+          "default": null
+        },
+        {
+          "name": "classes",
+          "type": "List[ClassInfo]",
+          "default": null
+        },
+        {
+          "name": "imports",
+          "type": "List[ImportInfo]",
+          "default": null
+        },
+        {
+          "name": "data_models",
+          "type": "List[DataModelInfo]",
+          "default": null
+        },
+        {
+          "name": "lines_of_code",
+          "type": "int",
+          "default": null
+        },
+        {
+          "name": "complexity_score",
+          "type": "int",
+          "default": null
+        }
+      ],
+      "line_number": 66
+    },
+    {
+      "name": "FeatureMap",
+      "type": "dataclass",
+      "fields": [
+        {
+          "name": "project_name",
+          "type": "str",
+          "default": null
+        },
+        {
+          "name": "total_files",
+          "type": "int",
+          "default": null
+        },
+        {
+          "name": "total_lines",
+          "type": "int",
+          "default": null
+        },
+        {
+          "name": "languages",
+          "type": "Dict[str, int]",
+          "default": null
+        },
+        {
+          "name": "files",
+          "type": "List[FileAnalysis]",
+          "default": null
+        },
+        {
+          "name": "global_imports",
+          "type": "Set[str]",
+          "default": null
+        },
+        {
+          "name": "global_functions",
+          "type": "Set[str]",
+          "default": null
+        },
+        {
+          "name": "global_classes",
+          "type": "Set[str]",
+          "default": null
+        },
+        {
+          "name": "data_models",
+          "type": "List[DataModelInfo]",
+          "default": null
+        }
+      ],
+      "line_number": 79
+    },
+    {
+      "name": "DashboardProps",
+      "type": "interface",
+      "fields": [],
+      "line_number": 23
+    },
+    {
+      "name": "ProjectUploadProps",
+      "type": "interface",
+      "fields": [],
+      "line_number": 22
+    },
+    {
+      "name": "UploadedFile",
+      "type": "interface",
+      "fields": [],
+      "line_number": 26
+    },
+    {
+      "name": "requirements",
+      "type": "interface",
+      "fields": [],
+      "line_number": 108
+    },
+    {
+      "name": "AnalysisResultsProps",
+      "type": "interface",
+      "fields": [],
+      "line_number": 20
+    },
+    {
+      "name": "BugReport",
+      "type": "interface",
+      "fields": [],
+      "line_number": 26
+    },
+    {
+      "name": "CodeFix",
+      "type": "interface",
+      "fields": [],
+      "line_number": 24
+    },
+    {
+      "name": "CodeDiffViewerProps",
+      "type": "interface",
+      "fields": [],
+      "line_number": 38
+    },
+    {
+      "name": "BadgeProps",
+      "type": "interface",
+      "fields": [],
+      "line_number": 26
+    },
+    {
+      "name": "ButtonProps",
+      "type": "interface",
+      "fields": [],
+      "line_number": 37
+    },
+    {
+      "name": "CarouselApi",
+      "type": "type",
+      "fields": [],
+      "line_number": 10
+    },
+    {
+      "name": "UseCarouselParameters",
+      "type": "type",
+      "fields": [],
+      "line_number": 11
+    },
+    {
+      "name": "CarouselOptions",
+      "type": "type",
+      "fields": [],
+      "line_number": 12
+    },
+    {
+      "name": "CarouselPlugin",
+      "type": "type",
+      "fields": [],
+      "line_number": 13
+    },
+    {
+      "name": "CarouselProps",
+      "type": "type",
+      "fields": [],
+      "line_number": 15
+    },
+    {
+      "name": "CarouselContextProps",
+      "type": "type",
+      "fields": [],
+      "line_number": 22
+    },
+    {
+      "name": "ChartConfig",
+      "type": "type",
+      "fields": [],
+      "line_number": 11
+    },
+    {
+      "name": "ChartContextProps",
+      "type": "type",
+      "fields": [],
+      "line_number": 21
+    },
+    {
+      "name": "FormItemContextValue",
+      "type": "type",
+      "fields": [],
+      "line_number": 67
+    },
+    {
+      "name": "PaginationLinkProps",
+      "type": "type",
+      "fields": [],
+      "line_number": 37
+    },
+    {
+      "name": "SheetContentProps",
+      "type": "interface",
+      "fields": [],
+      "line_number": 52
+    },
+    {
+      "name": "SidebarContextProps",
+      "type": "type",
+      "fields": [],
+      "line_number": 33
+    },
+    {
+      "name": "ToasterProps",
+      "type": "type",
+      "fields": [],
+      "line_number": 6
+    },
+    {
+      "name": "ToastProps",
+      "type": "type",
+      "fields": [],
+      "line_number": 113
+    },
+    {
+      "name": "ToastActionElement",
+      "type": "type",
+      "fields": [],
+      "line_number": 115
+    },
+    {
+      "name": "State",
+      "type": "interface",
+      "fields": [],
+      "line_number": 55
+    },
+    {
+      "name": "ToasterToast",
+      "type": "type",
+      "fields": [],
+      "line_number": 14
+    },
+    {
+      "name": "ActionType",
+      "type": "type",
+      "fields": [],
+      "line_number": 35
+    },
+    {
+      "name": "Action",
+      "type": "type",
+      "fields": [],
+      "line_number": 37
+    },
+    {
+      "name": "Toast",
+      "type": "type",
+      "fields": [],
+      "line_number": 143
+    }
+  ]
+}

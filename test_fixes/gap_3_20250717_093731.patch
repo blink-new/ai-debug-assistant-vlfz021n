@@ -1,0 +1,15 @@
+# Bug Fix: gap_3
+# File: src/components/Dashboard.tsx
+# Lines: 45-47
+
+--- a/src/components/Dashboard.tsx
++++ b/src/components/Dashboard.tsx
+@@ -1,2 +1,6 @@
+-// TODO: Fetch dashboard data
+-const data = null;
++const [data, setData] = useState(null);
++const [loading, setLoading] = useState(true);
++
++useEffect(() => {
++  fetchDashboardData().then(setData).finally(() => setLoading(false));
++}, []);

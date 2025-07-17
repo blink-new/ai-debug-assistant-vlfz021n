@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-07-17T09:20:13.619785",
+  "summary": {
+    "total_spec_features": 5,
+    "total_implemented_features": 183,
+    "missing_features": 5,
+    "deviations": 0,
+    "logical_mismatches": 0,
+    "match_percentage": 0.0
+  },
+  "missing_features": [
+    {
+      "feature_name": "UserFlow_Create New Invoice",
+      "type": "user_flow",
+      "description": "User flow: Create New Invoice",
+      "priority": "medium",
+      "impact": "low"
+    },
+    {
+      "feature_name": "UserFlow_User Login",
+      "type": "user_flow",
+      "description": "User flow: User Login",
+      "priority": "medium",
+      "impact": "low"
+    },
+    {
+      "feature_name": "User Authentication",
+      "type": "feature",
+      "description": "Feature: User Authentication",
+      "priority": "medium",
+      "impact": "low"
+    },
+    {
+      "feature_name": "Invoice Management",
+      "type": "feature",
+      "description": "Feature: Invoice Management",
+      "priority": "medium",
+      "impact": "low"
+    },
+    {
+      "feature_name": "PerformanceRequirements",
+      "type": "performance_requirement",
+      "description": "Performance requirements for the application",
+      "priority": "medium",
+      "impact": "low"
+    }
+  ],
+  "deviations": [],
+  "logical_mismatches": [],
+  "recommendations": []
+}

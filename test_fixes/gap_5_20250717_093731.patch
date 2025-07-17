@@ -1,0 +1,22 @@
+# Bug Fix: gap_5
+# File: src/components/CodeDiffViewer.tsx
+# Lines: 123-124
+
+--- a/src/components/CodeDiffViewer.tsx
++++ b/src/components/CodeDiffViewer.tsx
+@@ -1 +1,14 @@
+-diffs.map((diff, index) => <DiffLine key={index} diff={diff} />)
++import { FixedSizeList as List } from 'react-window';
++
++<List
++  height={400}
++  itemCount={diffs.length}
++  itemSize={25}
++  itemData={diffs}
++>
++  {({ index, style, data }) => (
++    <div style={style}>
++      <DiffLine diff={data[index]} />
++    </div>
++  )}
++</List>

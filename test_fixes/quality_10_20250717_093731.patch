@@ -1,0 +1,9 @@
+# Bug Fix: quality_10
+# File: src/services/api.ts
+# Lines: 156-157
+
+--- a/src/services/api.ts
++++ b/src/services/api.ts
+@@ -1 +1 @@
+-apiCall().then(handleSuccess);
++// Fix Error Handling issue

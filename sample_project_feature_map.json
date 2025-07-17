@@ -1,0 +1,332 @@
+{
+  "project_name": "sample_project",
+  "total_files": 3,
+  "total_lines": 104,
+  "languages": {
+    "python": 1,
+    "javascript": 1,
+    "typescript": 1
+  },
+  "files": [
+    {
+      "file_path": "main.py",
+      "language": "python",
+      "functions": [
+        {
+          "name": "main",
+          "args": [],
+          "decorators": [],
+          "docstring": "Main function.",
+          "line_number": 40,
+          "is_async": false
+        },
+        {
+          "name": "__init__",
+          "args": [
+            "self"
+          ],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 20,
+          "is_async": false
+        },
+        {
+          "name": "create_user",
+          "args": [
+            "self",
+            "name",
+            "email"
+          ],
+          "decorators": [],
+          "docstring": "Create a new user.",
+          "line_number": 23,
+          "is_async": true
+        },
+        {
+          "name": "get_user",
+          "args": [
+            "self",
+            "user_id"
+          ],
+          "decorators": [],
+          "docstring": "Get user by ID.",
+          "line_number": 33,
+          "is_async": false
+        }
+      ],
+      "classes": [
+        {
+          "name": "User",
+          "bases": [],
+          "methods": [],
+          "decorators": [
+            "dataclass"
+          ],
+          "docstring": "User data model.",
+          "line_number": 10
+        },
+        {
+          "name": "UserService",
+          "bases": [],
+          "methods": [
+            {
+              "name": "__init__",
+              "args": [
+                "self"
+              ],
+              "decorators": [],
+              "docstring": null,
+              "line_number": 20,
+              "is_async": false
+            },
+            {
+              "name": "create_user",
+              "args": [
+                "self",
+                "name",
+                "email"
+              ],
+              "decorators": [],
+              "docstring": "Create a new user.",
+              "line_number": 23,
+              "is_async": true
+            },
+            {
+              "name": "get_user",
+              "args": [
+                "self",
+                "user_id"
+              ],
+              "decorators": [],
+              "docstring": "Get user by ID.",
+              "line_number": 33,
+              "is_async": false
+            }
+          ],
+          "decorators": [],
+          "docstring": "Service for managing users.",
+          "line_number": 17
+        }
+      ],
+      "imports": [
+        {
+          "module": "os",
+          "names": [
+            "os"
+          ],
+          "alias": null,
+          "is_from_import": false
+        },
+        {
+          "module": "json",
+          "names": [
+            "json"
+          ],
+          "alias": null,
+          "is_from_import": false
+        },
+        {
+          "module": "dataclasses",
+          "names": [
+            "dataclass"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "typing",
+          "names": [
+            "List",
+            "Optional"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [
+        {
+          "name": "User",
+          "type": "dataclass",
+          "fields": [
+            {
+              "name": "id",
+              "type": "int",
+              "default": null
+            },
+            {
+              "name": "name",
+              "type": "str",
+              "default": null
+            },
+            {
+              "name": "email",
+              "type": "str",
+              "default": null
+            },
+            {
+              "name": "is_active",
+              "type": "bool",
+              "default": "True"
+            }
+          ],
+          "line_number": 10
+        }
+      ],
+      "lines_of_code": 37,
+      "complexity_score": 4
+    },
+    {
+      "file_path": "app.js",
+      "language": "javascript",
+      "functions": [
+        {
+          "name": "UserList",
+          "args": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 32,
+          "is_async": false
+        }
+      ],
+      "classes": [
+        {
+          "name": "UserComponent",
+          "bases": [
+            "React"
+          ],
+          "methods": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 5
+        }
+      ],
+      "imports": [
+        {
+          "module": "react",
+          "names": [
+            "React"
+          ],
+          "alias": null,
+          "is_from_import": true
+        },
+        {
+          "module": "axios",
+          "names": [
+            "axios"
+          ],
+          "alias": null,
+          "is_from_import": true
+        }
+      ],
+      "data_models": [],
+      "lines_of_code": 36,
+      "complexity_score": 3
+    },
+    {
+      "file_path": "types.ts",
+      "language": "typescript",
+      "functions": [],
+      "classes": [
+        {
+          "name": "ApiClient",
+          "bases": [],
+          "methods": [],
+          "decorators": [],
+          "docstring": null,
+          "line_number": 17
+        }
+      ],
+      "imports": [],
+      "data_models": [
+        {
+          "name": "User",
+          "type": "interface",
+          "fields": [],
+          "line_number": 2
+        },
+        {
+          "name": "ApiResponse",
+          "type": "interface",
+          "fields": [],
+          "line_number": 11
+        },
+        {
+          "name": "UserStatus",
+          "type": "type",
+          "fields": [],
+          "line_number": 9
+        }
+      ],
+      "lines_of_code": 31,
+      "complexity_score": 2
+    }
+  ],
+  "global_imports": [
+    "axios",
+    "json",
+    "dataclasses",
+    "react",
+    "os",
+    "typing"
+  ],
+  "global_functions": [
+    "get_user",
+    "__init__",
+    "main",
+    "UserList",
+    "create_user"
+  ],
+  "global_classes": [
+    "User",
+    "UserComponent",
+    "UserService",
+    "ApiClient"
+  ],
+  "data_models": [
+    {
+      "name": "User",
+      "type": "dataclass",
+      "fields": [
+        {
+          "name": "id",
+          "type": "int",
+          "default": null
+        },
+        {
+          "name": "name",
+          "type": "str",
+          "default": null
+        },
+        {
+          "name": "email",
+          "type": "str",
+          "default": null
+        },
+        {
+          "name": "is_active",
+          "type": "bool",
+          "default": "True"
+        }
+      ],
+      "line_number": 10
+    },
+    {
+      "name": "User",
+      "type": "interface",
+      "fields": [],
+      "line_number": 2
+    },
+    {
+      "name": "ApiResponse",
+      "type": "interface",
+      "fields": [],
+      "line_number": 11
+    },
+    {
+      "name": "UserStatus",
+      "type": "type",
+      "fields": [],
+      "line_number": 9
+    }
+  ]
+}

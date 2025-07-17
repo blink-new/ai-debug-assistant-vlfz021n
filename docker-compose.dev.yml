@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  # Python Backend API (Development)
+  backend:
+    build:
+      context: .
+      target: backend
+    container_name: ai-debug-backend-dev
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - PYTHONPATH=/app
+      - FLASK_ENV=development
+    volumes:
+      - .:/app
+      - ./uploads:/app/uploads
+      - ./output:/app/output
+    command: python api_server.py
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
+
+  # React Frontend (Development with hot reload)
+  frontend:
+    build:
+      context: .
+      target: frontend
+    container_name: ai-debug-frontend-dev
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+      - VITE_API_URL=http://localhost:8000
+      - CHOKIDAR_USEPOLLING=true
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: npm run dev -- --host 0.0.0.0
+    depends_on:
+      - backend
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
+
+networks:
+  default:
+    name: ai-debug-dev-network

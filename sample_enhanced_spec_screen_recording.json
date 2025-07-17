@@ -1,0 +1,269 @@
+{
+  "app_name": "Task Management Application",
+  "version": "1.0.0",
+  "analysis_type": "screen_recording",
+  "created_at": "2024-01-15T10:30:00Z",
+  
+  "application_overview": {
+    "description": "A comprehensive task management application with user authentication, dashboard, task CRUD operations, and reporting features",
+    "target_users": ["Project managers", "Team members", "Individual users"],
+    "primary_use_cases": [
+      "Task creation and assignment",
+      "Progress tracking",
+      "Team collaboration",
+      "Deadline management"
+    ]
+  },
+  
+  "user_flows": [
+    "User authentication and login process",
+    "Main dashboard navigation and overview",
+    "Task creation and form submission",
+    "Task editing and status updates",
+    "Task deletion and confirmation",
+    "User profile management",
+    "Settings and preferences configuration",
+    "Search and filtering functionality",
+    "Notification and alert handling",
+    "Logout and session management"
+  ],
+  
+  "features": [
+    {
+      "name": "Authentication System",
+      "flow": "User enters email and password, clicks login, system validates credentials and redirects to dashboard",
+      "expected_elements": ["Email input", "Password input", "Login button", "Remember me checkbox", "Forgot password link"],
+      "success_indicators": ["Dashboard loads", "User name displayed", "Navigation menu appears"],
+      "error_states": ["Invalid credentials message", "Network error notification", "Account locked warning"]
+    },
+    {
+      "name": "Dashboard Overview",
+      "flow": "User views task summary, recent activities, and navigation options",
+      "expected_elements": ["Task counter", "Recent tasks list", "Navigation menu", "User profile dropdown", "Search bar"],
+      "success_indicators": ["Task counts display correctly", "Recent tasks load", "Navigation is responsive"],
+      "error_states": ["Loading spinner stuck", "Empty state message", "Data fetch error"]
+    },
+    {
+      "name": "Task Creation",
+      "flow": "User clicks 'Add Task', fills form with title, description, due date, priority, and submits",
+      "expected_elements": ["Add Task button", "Title input", "Description textarea", "Due date picker", "Priority dropdown", "Submit button", "Cancel button"],
+      "success_indicators": ["Form validates correctly", "Task appears in list", "Success notification shows"],
+      "error_states": ["Validation errors display", "Submit button disabled", "Network error message"]
+    },
+    {
+      "name": "Task Management",
+      "flow": "User views task list, can edit, delete, or change status of existing tasks",
+      "expected_elements": ["Task list", "Edit button", "Delete button", "Status dropdown", "Checkbox for completion"],
+      "success_indicators": ["Tasks load in list", "Edit modal opens", "Status updates immediately"],
+      "error_states": ["Empty task list", "Edit form errors", "Delete confirmation modal"]
+    },
+    {
+      "name": "Search and Filter",
+      "flow": "User enters search terms or applies filters to find specific tasks",
+      "expected_elements": ["Search input", "Filter dropdown", "Clear filters button", "Results count"],
+      "success_indicators": ["Search results update", "Filters apply correctly", "Results count accurate"],
+      "error_states": ["No results found message", "Filter reset needed", "Search timeout"]
+    },
+    {
+      "name": "User Profile",
+      "flow": "User accesses profile settings, updates personal information and preferences",
+      "expected_elements": ["Profile dropdown", "Settings link", "Name input", "Email display", "Save button"],
+      "success_indicators": ["Profile loads", "Changes save successfully", "Confirmation message"],
+      "error_states": ["Profile load error", "Save validation errors", "Network timeout"]
+    }
+  ],
+  
+  "critical_paths": [
+    {
+      "name": "Complete Task Workflow",
+      "path": "Login → Dashboard → Add Task → Fill Form → Submit → Task List → Mark Complete",
+      "expected_duration": "30-60 seconds",
+      "success_criteria": ["Task created successfully", "Task appears in completed list", "Dashboard counters update"]
+    },
+    {
+      "name": "Task Management Flow",
+      "path": "Dashboard → Task List → Edit Task → Update Details → Save → Confirmation",
+      "expected_duration": "20-45 seconds",
+      "success_criteria": ["Task updates save", "Changes reflect immediately", "No data loss"]
+    },
+    {
+      "name": "User Onboarding",
+      "path": "Login → Welcome Tour → Dashboard → Create First Task → Profile Setup",
+      "expected_duration": "60-120 seconds",
+      "success_criteria": ["User completes tour", "First task created", "Profile configured"]
+    }
+  ],
+  
+  "expected_screens": [
+    {
+      "name": "Login Screen",
+      "description": "User authentication interface",
+      "key_elements": ["Email field", "Password field", "Login button", "Branding logo"],
+      "expected_text": ["Login", "Email", "Password", "Sign In", "Forgot Password"]
+    },
+    {
+      "name": "Main Dashboard",
+      "description": "Primary application interface after login",
+      "key_elements": ["Navigation menu", "Task summary cards", "Recent activity", "Quick actions"],
+      "expected_text": ["Dashboard", "Tasks", "Recent", "Add Task", "Profile"]
+    },
+    {
+      "name": "Task Creation Form",
+      "description": "Form for creating new tasks",
+      "key_elements": ["Title input", "Description area", "Due date picker", "Priority selector"],
+      "expected_text": ["New Task", "Title", "Description", "Due Date", "Priority", "Save", "Cancel"]
+    },
+    {
+      "name": "Task List View",
+      "description": "List of all user tasks with management options",
+      "key_elements": ["Task items", "Status indicators", "Action buttons", "Filter controls"],
+      "expected_text": ["Tasks", "Status", "Edit", "Delete", "Complete", "Filter", "Search"]
+    },
+    {
+      "name": "Task Details Modal",
+      "description": "Detailed view and editing interface for individual tasks",
+      "key_elements": ["Task information", "Edit form", "Status controls", "Action buttons"],
+      "expected_text": ["Task Details", "Edit", "Status", "Due Date", "Priority", "Update", "Close"]
+    },
+    {
+      "name": "User Profile Settings",
+      "description": "User account and preference management",
+      "key_elements": ["Profile form", "Settings options", "Save controls"],
+      "expected_text": ["Profile", "Settings", "Name", "Email", "Preferences", "Save Changes"]
+    },
+    {
+      "name": "Success/Confirmation Pages",
+      "description": "Feedback screens for successful actions",
+      "key_elements": ["Success message", "Action confirmation", "Next steps"],
+      "expected_text": ["Success", "Saved", "Created", "Updated", "Deleted", "Continue", "OK"]
+    },
+    {
+      "name": "Error/Warning Pages",
+      "description": "Error handling and warning displays",
+      "key_elements": ["Error message", "Retry options", "Help links"],
+      "expected_text": ["Error", "Warning", "Failed", "Try Again", "Help", "Contact Support"]
+    }
+  ],
+  
+  "ui_patterns": {
+    "navigation": {
+      "type": "sidebar",
+      "elements": ["Dashboard", "Tasks", "Profile", "Settings", "Logout"],
+      "behavior": "Persistent sidebar with active state indicators"
+    },
+    "forms": {
+      "validation": "Real-time validation with inline error messages",
+      "submission": "Loading states with success/error feedback",
+      "required_fields": "Visual indicators for required fields"
+    },
+    "modals": {
+      "behavior": "Overlay modals with backdrop click to close",
+      "actions": "Primary and secondary action buttons",
+      "escape": "ESC key and X button to close"
+    },
+    "notifications": {
+      "types": ["Success", "Error", "Warning", "Info"],
+      "duration": "Auto-dismiss after 5 seconds",
+      "position": "Top-right corner"
+    }
+  },
+  
+  "performance_expectations": {
+    "page_load_time": "< 3 seconds",
+    "form_submission": "< 2 seconds",
+    "search_response": "< 1 second",
+    "navigation_transition": "< 500ms"
+  },
+  
+  "accessibility_requirements": {
+    "keyboard_navigation": "Full keyboard accessibility",
+    "screen_reader": "ARIA labels and semantic HTML",
+    "color_contrast": "WCAG AA compliance",
+    "focus_indicators": "Visible focus states"
+  },
+  
+  "error_scenarios": [
+    {
+      "scenario": "Network Connection Lost",
+      "expected_behavior": "Show offline indicator, queue actions, retry when online",
+      "recovery": "Automatic retry with user notification"
+    },
+    {
+      "scenario": "Session Expired",
+      "expected_behavior": "Redirect to login with session timeout message",
+      "recovery": "Re-authenticate and return to previous page"
+    },
+    {
+      "scenario": "Form Validation Errors",
+      "expected_behavior": "Highlight invalid fields with specific error messages",
+      "recovery": "Allow correction and resubmission"
+    },
+    {
+      "scenario": "Server Error (500)",
+      "expected_behavior": "Show user-friendly error message with retry option",
+      "recovery": "Retry mechanism with escalation to support"
+    }
+  ],
+  
+  "testing_scenarios": [
+    {
+      "name": "Happy Path - Complete Task Creation",
+      "steps": [
+        "Login with valid credentials",
+        "Navigate to dashboard",
+        "Click 'Add Task' button",
+        "Fill all required fields",
+        "Submit form",
+        "Verify task appears in list"
+      ],
+      "expected_outcome": "Task created successfully and visible in task list"
+    },
+    {
+      "name": "Error Handling - Invalid Login",
+      "steps": [
+        "Enter invalid email/password",
+        "Click login button",
+        "Observe error message",
+        "Correct credentials",
+        "Retry login"
+      ],
+      "expected_outcome": "Clear error message, successful login after correction"
+    },
+    {
+      "name": "Edge Case - Empty Task List",
+      "steps": [
+        "Login as new user",
+        "Navigate to task list",
+        "Observe empty state",
+        "Click 'Add Task' from empty state"
+      ],
+      "expected_outcome": "Appropriate empty state message with clear call-to-action"
+    }
+  ],
+  
+  "analysis_configuration": {
+    "frame_sampling_rate": 1.0,
+    "change_detection_threshold": 0.15,
+    "text_similarity_threshold": 0.8,
+    "stuck_screen_timeout": 10.0,
+    "transition_confidence_minimum": 0.3
+  },
+  
+  "validation_rules": {
+    "required_flows": [
+      "User authentication",
+      "Dashboard navigation",
+      "Task creation"
+    ],
+    "prohibited_states": [
+      "Infinite loading",
+      "Unhandled errors",
+      "Broken navigation"
+    ],
+    "performance_thresholds": {
+      "max_stuck_duration": 15.0,
+      "min_transition_confidence": 0.5,
+      "max_error_recovery_time": 30.0
+    }
+  }
+}
